@@ -9,13 +9,24 @@
 
 #include "Pin.h"
 
-Pin::Pin(int pin) : mPin(pin) {
-	// TODO Auto-generated constructor stub
+namespace liberamox {
+using namespace liberamox;
 
+Pin::Pin()
+	: mPin(0)
+{
+	mValidity = Validity(false);
+}
+
+Pin::Pin(int pin) : mPin(pin) {
+	if (pin < 0) {
+		Pin();
+	} else {
+		mPin = pin;
+	}
 }
 
 Pin::~Pin() {
-	// TODO Auto-generated destructor stub
 }
 
 
@@ -27,3 +38,4 @@ void Pin::off() {
 	digitalWrite(mPin, LOW);
 }
 
+} /* namespace liberamox */

@@ -13,10 +13,15 @@
 #ifndef LIBRARIES_LIBERAMOX_HARDWAREADAPTER_H_
 #define LIBRARIES_LIBERAMOX_HARDWAREADAPTER_H_
 
+namespace liberamox {
+using namespace liberamox;
+
 class HardwareAdapter {
 public:
 	HardwareAdapter();
 	virtual ~HardwareAdapter();
 };
+
+} /* namespace liberamox */
 
 #endif /* LIBRARIES_LIBERAMOX_HARDWAREADAPTER_H_ */

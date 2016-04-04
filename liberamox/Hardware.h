@@ -14,10 +14,15 @@
 #ifndef LIBRARIES_LIBERAMOX_HARDWARE_H_
 #define LIBRARIES_LIBERAMOX_HARDWARE_H_
 
+namespace liberamox {
+using namespace liberamox;
+
 class Hardware {
 public:
 	Hardware();
 	virtual ~Hardware();
 };
+
+} /* namespace liberamox */
 
 #endif /* LIBRARIES_LIBERAMOX_HARDWARE_H_ */

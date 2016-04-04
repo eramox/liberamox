@@ -7,6 +7,9 @@
 
 #include "Hardware.h"
 
+namespace liberamox {
+using namespace liberamox;
+
 Hardware::Hardware() {
 	// TODO Auto-generated constructor stub
 
@@ -16,3 +19,4 @@ Hardware::~Hardware() {
 	// TODO Auto-generated destructor stub
 }
 
+} /* namespace liberamox */
