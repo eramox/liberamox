@@ -19,7 +19,7 @@ using namespace liberamox;
 class HardwareAdapter {
 public:
 	HardwareAdapter();
-	virtual ~HardwareAdapter();
+	virtual ~HardwareAdapter(){};
 };
 
 } /* namespace liberamox */

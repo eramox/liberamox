@@ -1,8 +1,14 @@
 /*
- * Interrupt.h
+ * \file Interrupt.h
  *
- *  Created on: Apr 4, 2016
- *      Author: eramox
+ * \brief This class allow the user to easily
+ *        interact with interrupts
+ *
+ * \author Franck LENORMAND <franck.lenormand.fr@gmail.com>
+ *
+ * \version 0.1
+ * \date 04 April 2016
+ *
  */
 
 #ifndef LIBRARIES_LIBERAMOX_INTERRUPT_H_
@@ -13,12 +19,15 @@
 #include "Pin.h"
 #include "Utility.h"
 
+/*
+ * \namespace liberamox to wrap all functions of the library
+ */
 namespace liberamox {
 using namespace liberamox;
 
 /*
- * Macro to create some code deactivating interrupts
- * temporaly
+ * \def BLOCK_WITHOUT_INTERRUPTS Macro to create some code
+ * deactivating interrupts temporaly
  */
 #define BLOCK_WITHOUT_INTERRUPTS(codeToRun) \
 		{\
@@ -27,32 +36,53 @@ using namespace liberamox;
 		activateAll();\
 		}
 
-typedef void (* ISRFuntion) ();
-
+/*
+ * class Interrupt
+ */
 class Interrupt {
+public:
+	/*
+	 * \def define of the format of an <ISRFunction>
+	 */
+	typedef void (* ISRFuntion)();
+
 private:
 	Pin mPin;
 	int mInt;
-	ISRFuntion mISR;
+	const ISRFuntion * mISR;
 	int mMode;
 	boolean mAttached;
 	Validity mValidity;
 
 public:
 	/*
-	 * Default empty constructor
+	 * \brief Default empty constructor, build an instance which is not valid
 	 */
 	Interrupt();
+
 	/*
-	 * Constructor to build a usable interrupt
+	 * \brief Constructor to build a usable interrupt
+	 *
+	 * \param[in] pin <Pin> on which the interrupts will be
+	 * \param[in] isr <ISRFunction> function called when the interrupts is triggered
+	 * \param[in] mode the mode of transition on which the interrupts is triggered
+	 * \param[in,out] errval error code after execution of the function
 	 */
-	Interrupt(Pin pin, ISRFuntion isr, int mode, int &errval);
-	virtual ~Interrupt();
+	Interrupt(const Pin pin, const ISRFuntion *isr, const int mode, int &errval);
+	virtual ~Interrupt(){};
 
 	/*
 	 * These functions allows to enabe/disable the Interrupts
 	 */
+	/*
+	 * \brief enable an interrupts
+	 * \param[in] errval error code
+	 */
 	void enable(int &errval);
+	/*
+	 * \brief disable an interrupts
+	 * \param[in] errval error code
+	 */
 	void disable(int &errval);
 
 	/*
@@ -60,8 +90,14 @@ public:
 	 * the interruption mechanism
 	 * TODO add time function to be proper in this case
 	 */
-	inline static void deactivateAll() {interrupts();}
-	inline static void activateAll() {noInterrupts();}
+	/*
+	 * \brief deactivate interrupts mechanism on the system
+	 */
+	inline static void deactivateAll() const {interrupts();}
+	/*
+	 * \brief activate interrupts mechanism on the system
+	 */
+	inline static void activateAll() const {noInterrupts();}
 
 	inline void setValid() {mValidity = Validity(true);}
 	inline void setInvalid() {mValidity = Validity(false);}

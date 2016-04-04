@@ -1,11 +1,14 @@
 /*
- * Pin.h
+ * \file Pin.h
  *
- *  Created on: Apr 3, 2016
- *      Author: eramox
+ * \brief This class allow the user to easily
+ *        interact with interrupts
  *
- * Allow to control the pin on the board and
- * provide utility functions
+ * \author Franck LENORMAND <franck.lenormand.fr@gmail.com>
+ *
+ * \version 0.1
+ * \date 04 April 2016
+ *
  */
 
 #ifndef LIBRARIES_LIBERAMOX_PIN_H_
@@ -13,9 +16,15 @@
 
 #include "Utility.h"
 
+/*
+ * \namespace liberamox to wrap all functions of the library
+ */
 namespace liberamox {
 using namespace liberamox;
 
+/*
+ * class Pin
+ */
 class Pin {
 private:
 	int mPin;
@@ -24,18 +33,18 @@ private:
 public:
 	Pin();
 	Pin(int pin);
-	virtual ~Pin();
+	virtual ~Pin(){};
 
-	/* Switch the Pin ON
+	/* \brief Switch the Pin ON
 	 */
-	void on();
+	inline void on() const {digitalWrite(mPin, HIGH);}
 
-	/* Switch the Pin ON
+	/* \brief Switch the Pin ON
 	 */
-	void off();
+	inline void off() const {digitalWrite(mPin, LOW);}
 
-	inline int getValue() {return mPin;}
-	inline boolean isValid() {return mValidity.isValid();}
+	inline int getValue() const {return mPin;}
+	inline boolean isValid() const {return mValidity.isValid();}
 
 	inline void setValid() {mValidity = Validity(true);}
 	inline void setInvalid() {mValidity = Validity(false);}

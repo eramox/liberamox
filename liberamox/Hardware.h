@@ -20,7 +20,7 @@ using namespace liberamox;
 class Hardware {
 public:
 	Hardware();
-	virtual ~Hardware();
+	virtual ~Hardware(){};
 };
 
 } /* namespace liberamox */
