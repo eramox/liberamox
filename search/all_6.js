@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['validity',['Validity',['../classliberamox_1_1Validity.html',1,'liberamox']]]
+  ['hardware',['Hardware',['../classliberamox_1_1Hardware.html',1,'liberamox']]],
+  ['hardwareadapter',['HardwareAdapter',['../classliberamox_1_1HardwareAdapter.html',1,'liberamox']]]
 ];

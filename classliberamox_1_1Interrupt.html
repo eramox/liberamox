@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -62,6 +63,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -80,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>liberamox</b></li><li class="navelem"><a class="el" href="classliberamox_1_1Interrupt.html">Interrupt</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceliberamox.html">liberamox</a></li><li class="navelem"><a class="el" href="classliberamox_1_1Interrupt.html">Interrupt</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -93,40 +95,155 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">liberamox::Interrupt Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="Interrupt_8h_source.html">Interrupt.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:afd675f33f9feb88ba280b01a794911c9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd675f33f9feb88ba280b01a794911c9"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>ISRFuntion</b>) ()</td></tr>
+<tr class="memitem:afd675f33f9feb88ba280b01a794911c9"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classliberamox_1_1Interrupt.html#afd675f33f9feb88ba280b01a794911c9">ISRFuntion</a>) ()</td></tr>
 <tr class="separator:afd675f33f9feb88ba280b01a794911c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0479839f342e75ebe1bd379f9d54741e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0479839f342e75ebe1bd379f9d54741e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Interrupt</b> (const <a class="el" href="classliberamox_1_1Pin.html">Pin</a> pin, const ISRFuntion *isr, const int mode, int &amp;errval)</td></tr>
+<tr class="memitem:a7b665432d926e17063409c32e48d985f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b665432d926e17063409c32e48d985f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classliberamox_1_1Interrupt.html#a7b665432d926e17063409c32e48d985f">Interrupt</a> ()</td></tr>
+<tr class="memdesc:a7b665432d926e17063409c32e48d985f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default empty constructor, build an instance which is not valid. <br /></td></tr>
+<tr class="separator:a7b665432d926e17063409c32e48d985f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0479839f342e75ebe1bd379f9d54741e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classliberamox_1_1Interrupt.html#a0479839f342e75ebe1bd379f9d54741e">Interrupt</a> (const <a class="el" href="classliberamox_1_1Pin.html">Pin</a> pin, const <a class="el" href="classliberamox_1_1Interrupt.html#afd675f33f9feb88ba280b01a794911c9">ISRFuntion</a> *isr, const int mode, int &amp;errval)</td></tr>
+<tr class="memdesc:a0479839f342e75ebe1bd379f9d54741e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor to build a usable interrupt.  <a href="#a0479839f342e75ebe1bd379f9d54741e">More...</a><br /></td></tr>
 <tr class="separator:a0479839f342e75ebe1bd379f9d54741e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8148e27ca9a50e98b291b2909a2df08"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab8148e27ca9a50e98b291b2909a2df08"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>enable</b> (int &amp;errval)</td></tr>
+<tr class="memitem:ab8148e27ca9a50e98b291b2909a2df08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classliberamox_1_1Interrupt.html#ab8148e27ca9a50e98b291b2909a2df08">enable</a> (int &amp;errval)</td></tr>
+<tr class="memdesc:ab8148e27ca9a50e98b291b2909a2df08"><td class="mdescLeft">&#160;</td><td class="mdescRight">enable an interrupts  <a href="#ab8148e27ca9a50e98b291b2909a2df08">More...</a><br /></td></tr>
 <tr class="separator:ab8148e27ca9a50e98b291b2909a2df08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b533ca115c7488e69ef2b041dfbcd95"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b533ca115c7488e69ef2b041dfbcd95"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>disable</b> (int &amp;errval)</td></tr>
+<tr class="memitem:a2b533ca115c7488e69ef2b041dfbcd95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classliberamox_1_1Interrupt.html#a2b533ca115c7488e69ef2b041dfbcd95">disable</a> (int &amp;errval)</td></tr>
+<tr class="memdesc:a2b533ca115c7488e69ef2b041dfbcd95"><td class="mdescLeft">&#160;</td><td class="mdescRight">disable an interrupts  <a href="#a2b533ca115c7488e69ef2b041dfbcd95">More...</a><br /></td></tr>
 <tr class="separator:a2b533ca115c7488e69ef2b041dfbcd95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2030477440fd97e9c8bf39014e359cca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2030477440fd97e9c8bf39014e359cca"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setValid</b> ()</td></tr>
-<tr class="separator:a2030477440fd97e9c8bf39014e359cca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a021a8f5bc2257558b294eb1b0e41cdc4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a021a8f5bc2257558b294eb1b0e41cdc4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setInvalid</b> ()</td></tr>
-<tr class="separator:a021a8f5bc2257558b294eb1b0e41cdc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aaf2ef5067146e096e702e787d41db7ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaf2ef5067146e096e702e787d41db7ad"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>deactivateAll</b> () const </td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classliberamox_1_1Interrupt.html#aaf2ef5067146e096e702e787d41db7ad">deactivateAll</a> () const </td></tr>
+<tr class="memdesc:aaf2ef5067146e096e702e787d41db7ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">deactivate interrupts mechanism on the system <br /></td></tr>
 <tr class="separator:aaf2ef5067146e096e702e787d41db7ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ec2cd66ed040383a9e73f84d8a4c584"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ec2cd66ed040383a9e73f84d8a4c584"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>activateAll</b> () const </td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classliberamox_1_1Interrupt.html#a7ec2cd66ed040383a9e73f84d8a4c584">activateAll</a> () const </td></tr>
+<tr class="memdesc:a7ec2cd66ed040383a9e73f84d8a4c584"><td class="mdescLeft">&#160;</td><td class="mdescRight">activate interrupts mechanism on the system <br /></td></tr>
 <tr class="separator:a7ec2cd66ed040383a9e73f84d8a4c584"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>class <a class="el" href="classliberamox_1_1Interrupt.html">Interrupt</a> </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="afd675f33f9feb88ba280b01a794911c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(*  liberamox::Interrupt::ISRFuntion) ()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Type alias <code>ISRFuntion</code> for function signature:</p><div class="fragment"><div class="line">void (*)(void) </div></div><!-- fragment --> 
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a0479839f342e75ebe1bd379f9d54741e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">liberamox::Interrupt::Interrupt </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classliberamox_1_1Pin.html">Pin</a>&#160;</td>
+          <td class="paramname"><em>pin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classliberamox_1_1Interrupt.html#afd675f33f9feb88ba280b01a794911c9">ISRFuntion</a> *&#160;</td>
+          <td class="paramname"><em>isr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>errval</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor to build a usable interrupt. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pin</td><td>&lt;Pin&gt; on which the interrupts will be </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">isr</td><td>&lt;ISRFunction&gt; function called when the interrupts is triggered </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>the mode of transition on which the interrupts is triggered </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">errval</td><td>error code after execution of the function </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a2b533ca115c7488e69ef2b041dfbcd95"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void liberamox::Interrupt::disable </td>
+          <td>(</td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>errval</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>disable an interrupts </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">errval</td><td>error code </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab8148e27ca9a50e98b291b2909a2df08"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void liberamox::Interrupt::enable </td>
+          <td>(</td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>errval</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>enable an interrupts </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">errval</td><td>error code </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/eramox/gitrepo/projectArduino/liberamox/<a class="el" href="Interrupt_8h_source.html">Interrupt.h</a></li>
 <li>/home/eramox/gitrepo/projectArduino/liberamox/Interrupt.cpp</li>
