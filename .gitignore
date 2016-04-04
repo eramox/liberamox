@@ -1,3 +1,4 @@
 # Extension for Arduino plugin for Eclipse
 *.cpp
 objects.mk
+html/
