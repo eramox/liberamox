@@ -11,6 +11,7 @@ before_install:
 
 # scripts to run before build
 before_script:
+  - cd liberamox
   - mkdir build
   - cd build
   - cmake ..
