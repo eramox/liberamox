@@ -1,4 +1,4 @@
-/*
+/*!
  * \file BoardConfiguration.h
  *
  * \brief This class handle a borad configuration
@@ -15,18 +15,18 @@
 
 #include "Arduino.h"
 
-/*
+/*!
  * \namsepace liberamox to wrap all functions of the library
  */
 namespace liberamox {
 using namespace liberamox;
 
-/*
+/*!
  * \class BoardConfiguration
  */
 class BoardConfiguration {
 public:
-	/*
+	/*!
 	 * \brief check if the mode for the pin is correct
 	 *
 	 * \param[in] mode the mode to check

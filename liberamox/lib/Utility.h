@@ -16,7 +16,7 @@
 
 #include "Arduino.h"
 
-/*
+/*!
  * \namsepace liberamox to wrap all functions of the library
  */
 namespace liberamox {
@@ -27,7 +27,7 @@ enum VALIDITY{
 	INVALID
 };
 
-/*
+/*!
  * \class Validity
  */
 class Validity {

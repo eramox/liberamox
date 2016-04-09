@@ -1,4 +1,4 @@
-/*
+/*!
  * HardwareAdapter.h
  *
  *  Created on: Apr 3, 2016

@@ -1,4 +1,4 @@
-/*
+/*!
  * \file Pin.h
  *
  * \brief This class allow the user to easily
@@ -14,15 +14,15 @@
 #ifndef LIBRARIES_LIBERAMOX_PIN_H_
 #define LIBRARIES_LIBERAMOX_PIN_H_
 
-#include "Utility.h"
+#include "../lib/Utility.h"
 
-/*
+/*!
  * \namespace liberamox to wrap all functions of the library
  */
 namespace liberamox {
 using namespace liberamox;
 
-/*
+/*!
  * class Pin
  */
 class Pin {
@@ -35,13 +35,15 @@ public:
 	Pin(int pin);
 	virtual ~Pin(){};
 
-	/* \brief Switch the Pin ON
+	/*! \brief Switch the Pin ON
 	 */
 	inline void on() const {digitalWrite(mPin, HIGH);}
 
-	/* \brief Switch the Pin ON
+	/*! \brief Switch the Pin ON
 	 */
 	inline void off() const {digitalWrite(mPin, LOW);}
+
+	inline void blink(int time) const {on();delay(time);off();}
 
 	inline int getValue() const {return mPin;}
 	inline boolean isValid() const {return mValidity.isValid();}

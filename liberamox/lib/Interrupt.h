@@ -1,4 +1,4 @@
-/*
+/*!
  * \file Interrupt.h
  *
  * \brief This class allow the user to easily
@@ -14,18 +14,18 @@
 #ifndef LIBRARIES_LIBERAMOX_INTERRUPT_H_
 #define LIBRARIES_LIBERAMOX_INTERRUPT_H_
 
+#include "../lib/Pin.h"
+#include "../lib/Utility.h"
 #include "Arduino.h"
 
-#include "Pin.h"
-#include "Utility.h"
 
-/*
+/*!
  * \namespace liberamox to wrap all functions of the library
  */
 namespace liberamox {
 using namespace liberamox;
 
-/*
+/*!
  * \def BLOCK_WITHOUT_INTERRUPTS Macro to create some code
  * deactivating interrupts temporaly
  */
@@ -36,12 +36,12 @@ using namespace liberamox;
 		activateAll();\
 		}
 
-/*
+/*!
  * class Interrupt
  */
 class Interrupt {
 public:
-	/*
+	/*!
 	 * \def define of the format of an <ISRFunction>
 	 */
 	typedef void (* ISRFuntion)();
@@ -55,12 +55,12 @@ private:
 	Validity mValidity;
 
 public:
-	/*
+	/*!
 	 * \brief Default empty constructor, build an instance which is not valid
 	 */
 	Interrupt();
 
-	/*
+	/*!
 	 * \brief Constructor to build a usable interrupt
 	 *
 	 * \param[in] pin <Pin> on which the interrupts will be
@@ -74,12 +74,12 @@ public:
 	/*
 	 * These functions allows to enabe/disable the Interrupts
 	 */
-	/*
+	/*!
 	 * \brief enable an interrupts
 	 * \param[in] errval error code
 	 */
 	void enable(int &errval);
-	/*
+	/*!
 	 * \brief disable an interrupts
 	 * \param[in] errval error code
 	 */
@@ -90,11 +90,11 @@ public:
 	 * the interruption mechanism
 	 * TODO add time function to be proper in this case
 	 */
-	/*
+	/*!
 	 * \brief deactivate interrupts mechanism on the system
 	 */
 	inline static void deactivateAll() const {interrupts();}
-	/*
+	/*!
 	 * \brief activate interrupts mechanism on the system
 	 */
 	inline static void activateAll() const {noInterrupts();}
