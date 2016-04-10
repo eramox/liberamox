@@ -1,15 +1,13 @@
 set (LIBRARY_NAME liberamox)
 
-# Arduino plugin for eclipse
-set (ARDUINO_HOME "/opt/eclipse/arduinoPlugin")
-# Arduino
-set(ARDUINO_INCLUDE_DIR "${ARDUINO_HOME}/packages/arduino/hardware/avr/1.6.10/cores/arduino")
-# AVR includes
-set(AVR_INCLUDE_DIR "${ARDUINO_HOME}/tools/arduino/avr-gcc/4.8.1-arduino5/avr/include/")
-# Pin configuration depending on board !!
-set (PIN_CONFIG_INCLUDE "${ARDUINO_HOME}/packages/arduino/hardware/avr/1.6.10/variants/standard/")
+# set (ARDUINO_HEADER_HOME "${PROJECT_SOURCE_DIR}/../arduino_headers/")
+set (ARDUINO_VARIANTS "standard")
+if (CONTINUOUS_INTEGRATION_BUILD)
+    set(ARDUINO_HEADER_HOME "${CMAKE_CURRENT_SOURCE_DIR}/../../arduino_headers")
+endif (CONTINUOUS_INTEGRATION_BUILD)
+find_package(Arduino PATHS "${CMAKE_CURRENT_SOURCE_DIR}") 
 
-include_directories("${ARDUINO_INCLUDE_DIR};${AVR_INCLUDE_DIR};${PIN_CONFIG_INCLUDE}")
+include_directories("${ARDUINO_PATH_HEADERS}")
 
 # define specific...
 add_definitions(-D__COMPILING_AVR_LIBC__)

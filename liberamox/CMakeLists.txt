@@ -11,7 +11,14 @@ set (LIBERAMOX_VERSION_MAJOR 2)
 set (LIBERAMOX_VERSION_MINOR 1)
 set (LIBERAMOX_PATCH_MINOR   45)
 
+if (CONTINUOUS_INTEGRATION_BUILD)
+    message(STATUS "Starting Integration build")
+endif (CONTINUOUS_INTEGRATION_BUILD)
+
 set (CMAKE_DEBUG_VALUE true)
+
+
+message (STATUS "Configuring the project ${PROJECT_NAME}") 
 
 add_subdirectory(lib)
 add_subdirectory(src)
