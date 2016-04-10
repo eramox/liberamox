@@ -1,20 +1,13 @@
+# CMakeLists to build the library liberamox
+
 set (LIBRARY_NAME liberamox)
 
-# set (ARDUINO_HEADER_HOME "${PROJECT_SOURCE_DIR}/../arduino_headers/")
-set (ARDUINO_VARIANTS "standard")
-if (CONTINUOUS_INTEGRATION_BUILD)
-    set(ARDUINO_HEADER_HOME "${CMAKE_CURRENT_SOURCE_DIR}/../../arduino_headers")
-endif (CONTINUOUS_INTEGRATION_BUILD)
-find_package(Arduino PATHS "${CMAKE_CURRENT_SOURCE_DIR}") 
-
-include_directories("${ARDUINO_PATH_HEADERS}")
-
-# define specific...
-add_definitions(-D__COMPILING_AVR_LIBC__)
-add_definitions(-DF_CPU)
-add_definitions(-D__OPTIMIZE__)
-    # Avoid "warning: ‘__progmem__’ attribute directive ignored [-Wattributes]"
-# add_definitions(-D__ATTR_PROGMEM__="   ")
+if(ARDUINO_PLUGIN_HEADER_FOUND)
+    include_directories (${ARDUINO_PLUGIN_PATH_HEADERS})
+    add_definitions (${ARDUINO_PLUGIN_FLAG})
+else()
+    message(FATAL_ERROR " Cannot find headers for Arduino in ${ARDUINO_PLUGIN_HOME} for variant ${ARDUINO_PLUGIN_VARIANT}")
+endif()
 
 # get sources
 file(GLOB SOURCES_FILES . *.cpp)

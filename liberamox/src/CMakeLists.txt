@@ -10,6 +10,9 @@ configure_file (
 # add the binary tree to the search path for include files
 # so that we will find TutorialConfig.h
 include_directories("${PROJECT_BINARY_DIR}/src")
+
+# add the sources to the include directive
+include_directories("../lib")
  
 # add the executable
 add_executable(${EXECUTABLE_NAME} main.cpp)
