@@ -6,3 +6,5 @@ make install
 # To develop it, it is possible to import it in eclipse as a C++ project and to manage it with:
 - https://marketplace.eclipse.org/content/cmake4eclipse
 - http://cmakeed.sourceforge.net/
+
+Run test:

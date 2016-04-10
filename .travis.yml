@@ -5,17 +5,19 @@ compiler:
   - gcc
 
 before_install:
-  - sudo apt-get update -qq
-  - sudo apt-get install -qq cppcheck
+# -qq : quiet 
+# -y  : yes to all
+# install of cppcheck
+ - sudo apt-get update -qq
+ - sudo apt-get install -y cppcheck
+# install of gtest and compilation
+ - sudo apt-get install -y libgtest-dev
+ - "cd /usr/src/gtest && sudo cmake -DBUILD_SHARED_LIBS=ON . && sudo cmake --build . && sudo mv libg*.so /usr/local/lib/ ; cd -"
 
 # scripts to run before build
 before_script:
-  - cd liberamox
-  - mkdir build
-  - cd build
-  - cmake -DCONTINUOUS_INTEGRATION_BUILD="true" ..
+  - pwd
 
 # build app, and run tests (ie make & make test)
 script:
-  - cmake --build .
-#  - ctest --output-on-failure
+  - sh travisBuild.sh
