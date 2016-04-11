@@ -1,0 +1,119 @@
+\hypertarget{classliberamox_1_1RandomGenerator}{}\section{liberamox\+:\+:Random\+Generator Class Reference}
+\label{classliberamox_1_1RandomGenerator}\index{liberamox\+::\+Random\+Generator@{liberamox\+::\+Random\+Generator}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classliberamox_1_1RandomGenerator_ab60a70e0f015b364e905607690cac2d6}{S\+E\+E\+D\+\_\+\+T\+Y\+PE} \{ {\bfseries F\+I\+X\+ED}, 
+{\bfseries P\+I\+N\+\_\+\+R\+E\+AD}, 
+{\bfseries B\+A\+S\+E\+\_\+\+G\+E\+N\+E\+R\+A\+T\+ED}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classliberamox_1_1RandomGenerator_ab60a70e0f015b364e905607690cac2d6}{S\+E\+E\+D\+\_\+\+T\+Y\+PE} \hyperlink{classliberamox_1_1RandomGenerator_ab95f5e54da75bee458656c6c9d85033b}{get\+Seed\+Type} () const 
+\begin{DoxyCompactList}\small\item\em obtain the type of seed used \end{DoxyCompactList}\item 
+int \hyperlink{classliberamox_1_1RandomGenerator_afed1946628cd976de767ee2b19f5c53f}{get\+Seed} () const 
+\begin{DoxyCompactList}\small\item\em obtain the value of seed used \end{DoxyCompactList}\item 
+long \hyperlink{classliberamox_1_1RandomGenerator_a97e753a5f24b4be9b83e06ace496f62b}{get\+Random\+Value} (int max, int min=0) const 
+\begin{DoxyCompactList}\small\item\em obtain a random value \end{DoxyCompactList}\item 
+boolean \hyperlink{classliberamox_1_1RandomGenerator_acd18f3d3bcdf73afb320858ab6110588}{is\+Valid} ()
+\begin{DoxyCompactList}\small\item\em check if the the generator is valid \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classliberamox_1_1RandomGenerator}{Random\+Generator} \& \hyperlink{classliberamox_1_1RandomGenerator_a37bec52482fedfa9edbee539c56f66ef}{get\+Instance} (\hyperlink{classliberamox_1_1RandomGenerator_ab60a70e0f015b364e905607690cac2d6}{Random\+Generator\+::\+S\+E\+E\+D\+\_\+\+T\+Y\+PE} seedtype, void $\ast$seed)
+\begin{DoxyCompactList}\small\item\em Function to obtain an instance of \hyperlink{classliberamox_1_1RandomGenerator}{Random\+Generator} Once a \hyperlink{classliberamox_1_1RandomGenerator}{Random\+Generator} is instanced, all other Instantiation will be the same. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\index{liberamox\+::\+Random\+Generator@{liberamox\+::\+Random\+Generator}!S\+E\+E\+D\+\_\+\+T\+Y\+PE@{S\+E\+E\+D\+\_\+\+T\+Y\+PE}}
+\index{S\+E\+E\+D\+\_\+\+T\+Y\+PE@{S\+E\+E\+D\+\_\+\+T\+Y\+PE}!liberamox\+::\+Random\+Generator@{liberamox\+::\+Random\+Generator}}
+\subsubsection[{\texorpdfstring{S\+E\+E\+D\+\_\+\+T\+Y\+PE}{SEED_TYPE}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf liberamox\+::\+Random\+Generator\+::\+S\+E\+E\+D\+\_\+\+T\+Y\+PE}}\hypertarget{classliberamox_1_1RandomGenerator_ab60a70e0f015b364e905607690cac2d6}{}\label{classliberamox_1_1RandomGenerator_ab60a70e0f015b364e905607690cac2d6}
+to specify the type of seed to use for the random generator 
+
+\subsection{Member Function Documentation}
+\index{liberamox\+::\+Random\+Generator@{liberamox\+::\+Random\+Generator}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!liberamox\+::\+Random\+Generator@{liberamox\+::\+Random\+Generator}}
+\subsubsection[{\texorpdfstring{get\+Instance(\+Random\+Generator\+::\+S\+E\+E\+D\+\_\+\+T\+Y\+P\+E seedtype, void $\ast$seed)}{getInstance(RandomGenerator::SEED_TYPE seedtype, void *seed)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Random\+Generator}\& liberamox\+::\+Random\+Generator\+::get\+Instance (
+\begin{DoxyParamCaption}
+\item[{{\bf Random\+Generator\+::\+S\+E\+E\+D\+\_\+\+T\+Y\+PE}}]{seedtype, }
+\item[{void $\ast$}]{seed}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classliberamox_1_1RandomGenerator_a37bec52482fedfa9edbee539c56f66ef}{}\label{classliberamox_1_1RandomGenerator_a37bec52482fedfa9edbee539c56f66ef}
+
+
+Function to obtain an instance of \hyperlink{classliberamox_1_1RandomGenerator}{Random\+Generator} Once a \hyperlink{classliberamox_1_1RandomGenerator}{Random\+Generator} is instanced, all other Instantiation will be the same. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em seedtype} & the $<$\+S\+E\+E\+D\+\_\+\+T\+Y\+P\+E$>$ to use for the generator \\
+\hline
+\mbox{\tt in}  & {\em seed} & the seed value to use\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an instance of \hyperlink{classliberamox_1_1RandomGenerator}{Random\+Generator} 
+\end{DoxyReturn}
+\index{liberamox\+::\+Random\+Generator@{liberamox\+::\+Random\+Generator}!get\+Random\+Value@{get\+Random\+Value}}
+\index{get\+Random\+Value@{get\+Random\+Value}!liberamox\+::\+Random\+Generator@{liberamox\+::\+Random\+Generator}}
+\subsubsection[{\texorpdfstring{get\+Random\+Value(int max, int min=0) const }{getRandomValue(int max, int min=0) const }}]{\setlength{\rightskip}{0pt plus 5cm}long liberamox\+::\+Random\+Generator\+::get\+Random\+Value (
+\begin{DoxyParamCaption}
+\item[{int}]{max, }
+\item[{int}]{min = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classliberamox_1_1RandomGenerator_a97e753a5f24b4be9b83e06ace496f62b}{}\label{classliberamox_1_1RandomGenerator_a97e753a5f24b4be9b83e06ace496f62b}
+
+
+obtain a random value 
+
+\begin{DoxyReturn}{Returns}
+a random value in the interval \mbox{[}min ; max\mbox{[} 
+\end{DoxyReturn}
+\index{liberamox\+::\+Random\+Generator@{liberamox\+::\+Random\+Generator}!get\+Seed@{get\+Seed}}
+\index{get\+Seed@{get\+Seed}!liberamox\+::\+Random\+Generator@{liberamox\+::\+Random\+Generator}}
+\subsubsection[{\texorpdfstring{get\+Seed() const }{getSeed() const }}]{\setlength{\rightskip}{0pt plus 5cm}int liberamox\+::\+Random\+Generator\+::get\+Seed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classliberamox_1_1RandomGenerator_afed1946628cd976de767ee2b19f5c53f}{}\label{classliberamox_1_1RandomGenerator_afed1946628cd976de767ee2b19f5c53f}
+
+
+obtain the value of seed used 
+
+\begin{DoxyReturn}{Returns}
+the seed used for the generator 
+\end{DoxyReturn}
+\index{liberamox\+::\+Random\+Generator@{liberamox\+::\+Random\+Generator}!get\+Seed\+Type@{get\+Seed\+Type}}
+\index{get\+Seed\+Type@{get\+Seed\+Type}!liberamox\+::\+Random\+Generator@{liberamox\+::\+Random\+Generator}}
+\subsubsection[{\texorpdfstring{get\+Seed\+Type() const }{getSeedType() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+E\+E\+D\+\_\+\+T\+Y\+PE} liberamox\+::\+Random\+Generator\+::get\+Seed\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classliberamox_1_1RandomGenerator_ab95f5e54da75bee458656c6c9d85033b}{}\label{classliberamox_1_1RandomGenerator_ab95f5e54da75bee458656c6c9d85033b}
+
+
+obtain the type of seed used 
+
+\begin{DoxyReturn}{Returns}
+the $<$\+S\+E\+E\+D\+\_\+\+T\+Y\+P\+E$>$ used for the generator 
+\end{DoxyReturn}
+\index{liberamox\+::\+Random\+Generator@{liberamox\+::\+Random\+Generator}!is\+Valid@{is\+Valid}}
+\index{is\+Valid@{is\+Valid}!liberamox\+::\+Random\+Generator@{liberamox\+::\+Random\+Generator}}
+\subsubsection[{\texorpdfstring{is\+Valid()}{isValid()}}]{\setlength{\rightskip}{0pt plus 5cm}boolean liberamox\+::\+Random\+Generator\+::is\+Valid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classliberamox_1_1RandomGenerator_acd18f3d3bcdf73afb320858ab6110588}{}\label{classliberamox_1_1RandomGenerator_acd18f3d3bcdf73afb320858ab6110588}
+
+
+check if the the generator is valid 
+
+\begin{DoxyReturn}{Returns}
+a random value in the interval \mbox{[}min ; max\mbox{[} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/Random\+Generator.\+h\end{DoxyCompactItemize}

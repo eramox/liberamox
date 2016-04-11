@@ -1,0 +1,110 @@
+\hypertarget{classliberamox_1_1Interrupt}{}\section{liberamox\+:\+:Interrupt Class Reference}
+\label{classliberamox_1_1Interrupt}\index{liberamox\+::\+Interrupt@{liberamox\+::\+Interrupt}}
+
+
+{\ttfamily \#include $<$Interrupt.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ {\bfseries I\+S\+R\+Funtion}) ()\hypertarget{classliberamox_1_1Interrupt_afd675f33f9feb88ba280b01a794911c9}{}\label{classliberamox_1_1Interrupt_afd675f33f9feb88ba280b01a794911c9}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classliberamox_1_1Interrupt_a7b665432d926e17063409c32e48d985f}{Interrupt} ()\hypertarget{classliberamox_1_1Interrupt_a7b665432d926e17063409c32e48d985f}{}\label{classliberamox_1_1Interrupt_a7b665432d926e17063409c32e48d985f}
+
+\begin{DoxyCompactList}\small\item\em Default empty constructor, build an instance which is not valid. \end{DoxyCompactList}\item 
+\hyperlink{classliberamox_1_1Interrupt_a0479839f342e75ebe1bd379f9d54741e}{Interrupt} (const \hyperlink{classliberamox_1_1Pin}{Pin} pin, const I\+S\+R\+Funtion $\ast$isr, const int mode, int \&errval)
+\begin{DoxyCompactList}\small\item\em Constructor to build a usable interrupt. \end{DoxyCompactList}\item 
+void \hyperlink{classliberamox_1_1Interrupt_ab8148e27ca9a50e98b291b2909a2df08}{enable} (int \&errval)
+\begin{DoxyCompactList}\small\item\em enable an interrupts \end{DoxyCompactList}\item 
+void \hyperlink{classliberamox_1_1Interrupt_a2b533ca115c7488e69ef2b041dfbcd95}{disable} (int \&errval)
+\begin{DoxyCompactList}\small\item\em disable an interrupts \end{DoxyCompactList}\item 
+void {\bfseries set\+Valid} ()\hypertarget{classliberamox_1_1Interrupt_a2030477440fd97e9c8bf39014e359cca}{}\label{classliberamox_1_1Interrupt_a2030477440fd97e9c8bf39014e359cca}
+
+\item 
+void {\bfseries set\+Invalid} ()\hypertarget{classliberamox_1_1Interrupt_a021a8f5bc2257558b294eb1b0e41cdc4}{}\label{classliberamox_1_1Interrupt_a021a8f5bc2257558b294eb1b0e41cdc4}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classliberamox_1_1Interrupt_aaf2ef5067146e096e702e787d41db7ad}{deactivate\+All} () const \hypertarget{classliberamox_1_1Interrupt_aaf2ef5067146e096e702e787d41db7ad}{}\label{classliberamox_1_1Interrupt_aaf2ef5067146e096e702e787d41db7ad}
+
+\begin{DoxyCompactList}\small\item\em deactivate interrupts mechanism on the system \end{DoxyCompactList}\item 
+static void \hyperlink{classliberamox_1_1Interrupt_a7ec2cd66ed040383a9e73f84d8a4c584}{activate\+All} () const \hypertarget{classliberamox_1_1Interrupt_a7ec2cd66ed040383a9e73f84d8a4c584}{}\label{classliberamox_1_1Interrupt_a7ec2cd66ed040383a9e73f84d8a4c584}
+
+\begin{DoxyCompactList}\small\item\em activate interrupts mechanism on the system \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class \hyperlink{classliberamox_1_1Interrupt}{Interrupt} 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{liberamox\+::\+Interrupt@{liberamox\+::\+Interrupt}!Interrupt@{Interrupt}}
+\index{Interrupt@{Interrupt}!liberamox\+::\+Interrupt@{liberamox\+::\+Interrupt}}
+\subsubsection[{\texorpdfstring{Interrupt(const Pin pin, const I\+S\+R\+Funtion $\ast$isr, const int mode, int \&errval)}{Interrupt(const Pin pin, const ISRFuntion *isr, const int mode, int &errval)}}]{\setlength{\rightskip}{0pt plus 5cm}liberamox\+::\+Interrupt\+::\+Interrupt (
+\begin{DoxyParamCaption}
+\item[{const {\bf Pin}}]{pin, }
+\item[{const I\+S\+R\+Funtion $\ast$}]{isr, }
+\item[{const int}]{mode, }
+\item[{int \&}]{errval}
+\end{DoxyParamCaption}
+)}\hypertarget{classliberamox_1_1Interrupt_a0479839f342e75ebe1bd379f9d54741e}{}\label{classliberamox_1_1Interrupt_a0479839f342e75ebe1bd379f9d54741e}
+
+
+Constructor to build a usable interrupt. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pin} & $<$\+Pin$>$ on which the interrupts will be \\
+\hline
+\mbox{\tt in}  & {\em isr} & $<$\+I\+S\+R\+Function$>$ function called when the interrupts is triggered \\
+\hline
+\mbox{\tt in}  & {\em mode} & the mode of transition on which the interrupts is triggered \\
+\hline
+\mbox{\tt in,out}  & {\em errval} & error code after execution of the function \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{liberamox\+::\+Interrupt@{liberamox\+::\+Interrupt}!disable@{disable}}
+\index{disable@{disable}!liberamox\+::\+Interrupt@{liberamox\+::\+Interrupt}}
+\subsubsection[{\texorpdfstring{disable(int \&errval)}{disable(int &errval)}}]{\setlength{\rightskip}{0pt plus 5cm}void liberamox\+::\+Interrupt\+::disable (
+\begin{DoxyParamCaption}
+\item[{int \&}]{errval}
+\end{DoxyParamCaption}
+)}\hypertarget{classliberamox_1_1Interrupt_a2b533ca115c7488e69ef2b041dfbcd95}{}\label{classliberamox_1_1Interrupt_a2b533ca115c7488e69ef2b041dfbcd95}
+
+
+disable an interrupts 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em errval} & error code \\
+\hline
+\end{DoxyParams}
+\index{liberamox\+::\+Interrupt@{liberamox\+::\+Interrupt}!enable@{enable}}
+\index{enable@{enable}!liberamox\+::\+Interrupt@{liberamox\+::\+Interrupt}}
+\subsubsection[{\texorpdfstring{enable(int \&errval)}{enable(int &errval)}}]{\setlength{\rightskip}{0pt plus 5cm}void liberamox\+::\+Interrupt\+::enable (
+\begin{DoxyParamCaption}
+\item[{int \&}]{errval}
+\end{DoxyParamCaption}
+)}\hypertarget{classliberamox_1_1Interrupt_ab8148e27ca9a50e98b291b2909a2df08}{}\label{classliberamox_1_1Interrupt_ab8148e27ca9a50e98b291b2909a2df08}
+
+
+enable an interrupts 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em errval} & error code \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/\hyperlink{Interrupt_8h}{Interrupt.\+h}\end{DoxyCompactItemize}

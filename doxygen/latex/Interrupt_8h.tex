@@ -1,0 +1,57 @@
+\hypertarget{Interrupt_8h}{}\section{lib/\+Interrupt.h File Reference}
+\label{Interrupt_8h}\index{lib/\+Interrupt.\+h@{lib/\+Interrupt.\+h}}
+
+
+This class allow the user to easily interact with interrupts.  
+
+
+{\ttfamily \#include \char`\"{}../lib/\+Pin.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../lib/\+Utility.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Arduino.\+h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classliberamox_1_1Interrupt}{liberamox\+::\+Interrupt}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceliberamox}{liberamox}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries B\+L\+O\+C\+K\+\_\+\+W\+I\+T\+H\+O\+U\+T\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+TS}(code\+To\+Run)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class allow the user to easily interact with interrupts. 
+
+\begin{DoxyAuthor}{Author}
+Franck L\+E\+N\+O\+R\+M\+A\+ND \href{mailto:franck.lenormand.fr@gmail.com}{\tt franck.\+lenormand.\+fr@gmail.\+com}
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+04 April 2016 
+\end{DoxyDate}
+
+
+\subsection{Macro Definition Documentation}
+\index{Interrupt.\+h@{Interrupt.\+h}!B\+L\+O\+C\+K\+\_\+\+W\+I\+T\+H\+O\+U\+T\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+TS@{B\+L\+O\+C\+K\+\_\+\+W\+I\+T\+H\+O\+U\+T\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+TS}}
+\index{B\+L\+O\+C\+K\+\_\+\+W\+I\+T\+H\+O\+U\+T\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+TS@{B\+L\+O\+C\+K\+\_\+\+W\+I\+T\+H\+O\+U\+T\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+TS}!Interrupt.\+h@{Interrupt.\+h}}
+\subsubsection[{\texorpdfstring{B\+L\+O\+C\+K\+\_\+\+W\+I\+T\+H\+O\+U\+T\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+TS}{BLOCK_WITHOUT_INTERRUPTS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+L\+O\+C\+K\+\_\+\+W\+I\+T\+H\+O\+U\+T\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+TS(
+\begin{DoxyParamCaption}
+\item[{}]{code\+To\+Run}
+\end{DoxyParamCaption}
+)}\hypertarget{Interrupt_8h_ae1b60fed76daa6744ddd3bfbe100c7eb}{}\label{Interrupt_8h_ae1b60fed76daa6744ddd3bfbe100c7eb}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{\(\backslash\)
+        deactivateAll();\(\backslash\)
+        codeToRun;\(\backslash\)
+        activateAll();\(\backslash\)
+        \}
+\end{DoxyCode}

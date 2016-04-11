@@ -1,0 +1,440 @@
+\hypertarget{classliberamox_1_1ErrorMgmt}{}\section{liberamox\+:\+:Error\+Mgmt Class Reference}
+\label{classliberamox_1_1ErrorMgmt}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}
+
+
+/usr/include/asm/errno.h  
+
+
+
+
+{\ttfamily \#include $<$Error\+Mgmt.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6}{Ret\+Value} \{ \\*
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a2b6e9e58ae235205dd8a631218846e42}{R\+E\+T\+OK}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6ab0f3ee4b1c62cabe7995e58301ef7f7c}{E\+P\+E\+RM}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a7c7e8e1c8b5a52acbd2fdd47a584bf33}{E\+N\+O\+E\+NT}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a6ae3eb51a6b9a3f16ef376278ed290b2}{E\+S\+R\+CH}, 
+\\*
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6af344b6bd31640a3484756995763b0c33}{E\+I\+N\+TR}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a13e79a9dac976d1279fae0a8bdea067c}{E\+IO}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a8422e9d953c665ab3e6c97dc9d49b6b8}{E\+N\+X\+IO}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a1e4b912a780e92f676f86a1dd2037433}{E2\+B\+IG}, 
+\\*
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aa0b80339a681751c2d85c3c528107c32}{E\+N\+O\+E\+X\+EC}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a0c3ed40e5e7c2c617b13334d16f9726a}{E\+B\+A\+DF}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a50b9f1fcd48a5bd74576676755c313d7}{E\+C\+H\+I\+LD}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6ae7da30e8b546a8608ddcbddffe1c7657}{E\+A\+G\+A\+IN}, 
+\\*
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a67485042018ca95b2bedc1de434991ec}{E\+N\+O\+M\+EM}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aba16021ab6051bcab2f643e1ec1867a2}{E\+A\+C\+C\+ES}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a4114aae8a8d7f8aef1f8a59eb91d96d4}{E\+F\+A\+U\+LT}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a2577464fd9f84fe5d399565622b29b3e}{E\+N\+O\+T\+B\+LK}, 
+\\*
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a8ea0d99b6b0a793b00d08afc914372cb}{E\+B\+U\+SY}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a1823661c36d2cd1da83d252ef64cd4ef}{E\+E\+X\+I\+ST}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a0bd10b6a2530e474dd84cd82c937520e}{E\+X\+D\+EV}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a855331ab6830534959994f27f4bf5290}{E\+N\+O\+D\+EV}, 
+\\*
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a755e6867f2efb2285fc31cb957340695}{E\+N\+O\+T\+D\+IR}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6af0c5b40ec99077ee819dffa7ea7db838}{E\+I\+S\+D\+IR}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6af3b2c736cd98554b693419bc3bd6bc5a}{E\+I\+N\+V\+AL}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6ae19c4d12aeed677fa8085670f564d86f}{E\+N\+F\+I\+LE}, 
+\\*
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a06aaf2a7ec860bb2dfede1eda55b1c95}{E\+M\+F\+I\+LE}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a9658b2af30be8fdb91ab3a0fe9210914}{E\+N\+O\+T\+TY}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aefbc48a34cf8a26adfc00997f0cd7054}{E\+T\+X\+T\+B\+SY}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a5f9217735e459d1fa1356b56aa9cf4b7}{E\+F\+B\+IG}, 
+\\*
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a19ca1ae664eb5451c035347cef177988}{E\+N\+O\+S\+PC}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a656f6215701220ee880852d1544f841c}{E\+S\+P\+I\+PE}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aa0db1f7a00502ff32aa6c1b0efbd5f40}{E\+R\+O\+FS}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6ab42a11dc36aa734524cda9c7af74cb91}{E\+M\+L\+I\+NK}, 
+\\*
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aacf59c16adc26fc153053f5a634943e6}{E\+P\+I\+PE}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6af97251a760aed575f299d015f4e001a2}{E\+D\+OM}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a8ec0ab9151cb92c290a6709096abecaa}{E\+R\+A\+N\+GE}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6abf8e5855ae1958dbcc5276d88364513d}{E\+D\+E\+A\+D\+LK}, 
+\\*
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a8c879712015d1cbc8073ddf7bb2dc9ac}{E\+N\+A\+M\+E\+T\+O\+O\+L\+O\+NG}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a99b31701aba0b67009c614a22ead325f}{E\+N\+O\+L\+CK}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a3bbba876392b56900632b8a3b0629e95}{E\+N\+O\+S\+YS}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a4c0203a04898bb4c84215694ef568bda}{E\+N\+O\+T\+E\+M\+P\+TY}, 
+\\*
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a924e5ba29e5b9f22a391d4672dadbe35}{E\+L\+O\+OP}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a41e443804b8a330e01d86e9307a95505}{E\+W\+O\+U\+L\+D\+B\+L\+O\+CK} = E\+A\+G\+A\+IN, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aadd55a1a3a72674ae49650f570984def}{E\+N\+O\+M\+SG}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a175ffffd0f8ac6ba9ed8fd2bc317013e}{E\+I\+D\+RM}, 
+\\*
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6ab219303a043711fbea0a65dfe0333369}{E\+C\+H\+R\+NG}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a62bc3d468345e9487310fc33d1392d16}{E\+L2\+N\+S\+Y\+NC}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a52b70cd54b80ffad37f8fd5b67077ef6}{E\+L3\+H\+LT}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a4ad6750cfb9f2c509e282d9c0e6766cc}{E\+L3\+R\+ST}, 
+\\*
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a33465010542c87c4bec3ffbb4b6bc71c}{E\+L\+N\+R\+NG}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a3126b9fcf8c339acca8ec432e386f01a}{E\+U\+N\+A\+T\+CH}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aeec53c2afc1a7e2e681f773235abb77b}{E\+N\+O\+C\+SI}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6af30888e9a0fa29781a5f7942bab42e7d}{E\+L2\+H\+LT}, 
+\\*
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6ac64347fe43300a928de915e4b8bf7796}{E\+B\+A\+DE}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a4b5f4fbccba662997d445a3be5b7e6de}{E\+B\+A\+DR}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a8615130f9f3382ffb14a78185f5a1caa}{E\+X\+F\+U\+LL}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a7413defee43fa250ea33f9448cc997c8}{E\+N\+O\+A\+NO}, 
+\\*
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a744eb15ceae97deb8e350e970d1093f5}{E\+B\+A\+D\+R\+QC}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a709c0f11f020a423403cbb18a18efbb4}{E\+B\+A\+D\+S\+LT}, 
+{\bfseries E\+D\+E\+A\+D\+L\+O\+CK} = E\+D\+E\+A\+D\+LK, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6af1a8808b5ae48a4914f23680ae93c72e}{E\+B\+F\+O\+NT}, 
+\\*
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6abde212331ef74c3ef99c390b692f11fa}{E\+N\+O\+S\+TR}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a30e8c06ba1a7236161005cb937236478}{E\+N\+O\+D\+A\+TA}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a7d06cc8ca72d4e78cf950b0185db45dd}{E\+T\+I\+ME}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a925f6f7a7c07a0bb9f61bb5fba91dd7c}{E\+N\+O\+SR}, 
+\\*
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a9ace779fe071c881aa0c4688a17e9e3e}{E\+N\+O\+N\+ET}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a851ff1f858f0f3809f4af2ad5305c72b}{E\+N\+O\+P\+KG}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a9e3e8b5686ae9e223a88ae35d97bb307}{E\+R\+E\+M\+O\+TE}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a11a8b60f577a844ea6842787afb50f27}{E\+N\+O\+L\+I\+NK}, 
+\\*
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aaba88cc41661a3636dd0507c65ac33b2}{E\+A\+DV}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6af4d525f3ec1b9876522c581694eb4a14}{E\+S\+R\+M\+NT}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a8394fc2cecbb5e3fd72ca46e5d53b459}{E\+C\+O\+MM}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a197884f3dcaf8d00c681a9ef7b741c1b}{E\+P\+R\+O\+TO}, 
+\\*
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6ac4bf10dcb99ea652f0f80fd3609cdac5}{E\+M\+U\+L\+T\+I\+H\+OP}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6ac244972bd945fd74c3343e232d04d952}{E\+D\+O\+T\+D\+OT}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a33bfb39d641e1cc24e77542ef4b1d143}{E\+B\+A\+D\+M\+SG}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a07156032639fa34c57677d5a0537d681}{E\+O\+V\+E\+R\+F\+L\+OW}, 
+\\*
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a4c4870bf00e02145d9357f131602d0aa}{E\+N\+O\+T\+U\+N\+IQ}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aa33e7e64060f699afe631fcae6d45fe0}{E\+B\+A\+D\+FD}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a740b0ce0ff1b2515837f3c335811dc0d}{E\+R\+E\+M\+C\+HG}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a95f2ee83065e69aff6f55d76a239d4e7}{E\+L\+I\+B\+A\+CC}, 
+\\*
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a8189939be5d15a02caab6f76070d48b1}{E\+L\+I\+B\+B\+AD}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a3d21849b35f4aca74dc07c7640094792}{E\+L\+I\+B\+S\+CN}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a5aabd643cc1d395fe8639f8c47a9a928}{E\+L\+I\+B\+M\+AX}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a592db79b8766cb0a9739074424434a81}{E\+L\+I\+B\+E\+X\+EC}, 
+\\*
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a7d27ad0da80e9107117db97e7613d009}{E\+I\+L\+S\+EQ}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a394c0301d0a59670475ab7e3f40a6207}{E\+R\+E\+S\+T\+A\+RT}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aeedd8164f356696e21bf69862758b1cd}{E\+S\+T\+R\+P\+I\+PE}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6ad68af220fb92ce98cafd8deac7425afb}{E\+U\+S\+E\+RS}, 
+\\*
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a3d527e6dea35118172cea2841c643d15}{E\+N\+O\+T\+S\+O\+CK}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a22a622c8cf91a7ec81a3aeebbb0fbac3}{E\+D\+E\+S\+T\+A\+D\+D\+R\+R\+EQ}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a4691ae5001945dcd4060350ced7209ba}{E\+M\+S\+G\+S\+I\+ZE}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a09a2c06115576d898d7c5368caffe165}{E\+P\+R\+O\+T\+O\+T\+Y\+PE}, 
+\\*
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a56c267d3e5761d5348b1926eb9881087}{E\+N\+O\+P\+R\+O\+T\+O\+O\+PT}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a9406a0d80037f8237fff5a4f3f5b614d}{E\+P\+R\+O\+T\+O\+N\+O\+S\+U\+P\+P\+O\+RT}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6addb6bb9fdbc9ceaeba60d9074bb8fe1c}{E\+S\+O\+C\+K\+T\+N\+O\+S\+U\+P\+P\+O\+RT}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aba44b0ae349783e0d73eeb44ea2aed9a}{E\+O\+P\+N\+O\+T\+S\+U\+PP}, 
+\\*
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a216f0e0940f5ca6cafff214aa9d58793}{E\+P\+F\+N\+O\+S\+U\+P\+P\+O\+RT}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6ab215c058f57dc63434fe420d44501337}{E\+A\+F\+N\+O\+S\+U\+P\+P\+O\+RT}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a341ede68e0283899bc24aff70298ba2c}{E\+A\+D\+D\+R\+I\+N\+U\+SE}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a11b6f454ad3953d06a38ac737bbdc713}{E\+A\+D\+D\+R\+N\+O\+T\+A\+V\+A\+IL}, 
+\\*
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6af3edcaebc8b5e4616a985723fe55de13}{E\+N\+E\+T\+D\+O\+WN}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aff66a24f79fe22653656bfd57bc1a781}{E\+N\+E\+T\+U\+N\+R\+E\+A\+CH}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a18d1942865d9c71d0c6dafce322263bf}{E\+N\+E\+T\+R\+E\+S\+ET}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a2d0d0ea22b8493643de72f741692ae22}{E\+C\+O\+N\+N\+A\+B\+O\+R\+T\+ED}, 
+\\*
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a7faa7018e4e1a90e03951e392639d38c}{E\+C\+O\+N\+N\+R\+E\+S\+ET}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a1fc9a1bd0b4cbe6e02c5ab900f9811f0}{E\+N\+O\+B\+U\+FS}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a7da140f1e972ad7ab69295a6f7a74b9f}{E\+I\+S\+C\+O\+NN}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6ac934397332d6a7ec09e5dfa409c9ffa2}{E\+N\+O\+T\+C\+O\+NN}, 
+\\*
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aca32998801543fbce8e7b4b0d64d38b1}{E\+S\+H\+U\+T\+D\+O\+WN}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a1dd4f4bcf82751081d38cc13bec36730}{E\+T\+O\+O\+M\+A\+N\+Y\+R\+E\+FS}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6af6caa7ce858a26ab4402098ee20a5d64}{E\+T\+I\+M\+E\+D\+O\+UT}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6adea9782c25d3b9f5252b4570087db533}{E\+C\+O\+N\+N\+R\+E\+F\+U\+S\+ED}, 
+\\*
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a92b69e9abbf4ea4aac62db37068a9ea8}{E\+H\+O\+S\+T\+D\+O\+WN}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a8db51cc720349b5fefef1fe93b3de304}{E\+H\+O\+S\+T\+U\+N\+R\+E\+A\+CH}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aa514094caef6536fec2699d5f658e893}{E\+A\+L\+R\+E\+A\+DY}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a42fc3a7d50eaeadbe9d6952b4b302c92}{E\+I\+N\+P\+R\+O\+G\+R\+E\+SS}, 
+\\*
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6ae56e8ac85c5bf34910325abdfef6f1cc}{E\+S\+T\+A\+LE}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6ac85e0784c30642148c6566a9fff14e44}{E\+U\+C\+L\+E\+AN}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a9851e876e988ceec534f28430093f080}{E\+N\+O\+T\+N\+AM}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6adc403b2847389403e4ad2c67ee30d79b}{E\+N\+A\+V\+A\+IL}, 
+\\*
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a1a3146fb3796c6d6ff4ee4d464d209de}{E\+I\+S\+N\+AM}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a39e5e4a5a84c4e721aaeb0d49bbf95fb}{E\+R\+E\+M\+O\+T\+E\+IO}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a0e64f4816c63cfdd41bb84fb7e36da21}{E\+D\+Q\+U\+OT}, 
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aa0b41c5784d23854104e9a3f9b2bfa26}{E\+N\+O\+M\+E\+D\+I\+UM}, 
+\\*
+\hyperlink{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a2482f3bb9fff2906efae5dfb064008e0}{E\+M\+E\+D\+I\+U\+M\+T\+Y\+PE}
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+/usr/include/asm/errno.h 
+
+\subsection{Member Enumeration Documentation}
+\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!Ret\+Value@{Ret\+Value}}
+\index{Ret\+Value@{Ret\+Value}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}
+\subsubsection[{\texorpdfstring{Ret\+Value}{RetValue}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf liberamox\+::\+Error\+Mgmt\+::\+Ret\+Value}}\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6}
+to specify the different errors which can happen \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{R\+E\+T\+OK@{R\+E\+T\+OK}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!R\+E\+T\+OK@{R\+E\+T\+OK}}\item[{\em 
+R\+E\+T\+OK\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a2b6e9e58ae235205dd8a631218846e42}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a2b6e9e58ae235205dd8a631218846e42}
+}]No error occured \index{E\+P\+E\+RM@{E\+P\+E\+RM}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+P\+E\+RM@{E\+P\+E\+RM}}\item[{\em 
+E\+P\+E\+RM\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6ab0f3ee4b1c62cabe7995e58301ef7f7c}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6ab0f3ee4b1c62cabe7995e58301ef7f7c}
+}]Operation not permitted \index{E\+N\+O\+E\+NT@{E\+N\+O\+E\+NT}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+N\+O\+E\+NT@{E\+N\+O\+E\+NT}}\item[{\em 
+E\+N\+O\+E\+NT\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a7c7e8e1c8b5a52acbd2fdd47a584bf33}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a7c7e8e1c8b5a52acbd2fdd47a584bf33}
+}]No such file or directory \index{E\+S\+R\+CH@{E\+S\+R\+CH}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+S\+R\+CH@{E\+S\+R\+CH}}\item[{\em 
+E\+S\+R\+CH\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a6ae3eb51a6b9a3f16ef376278ed290b2}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a6ae3eb51a6b9a3f16ef376278ed290b2}
+}]No such process \index{E\+I\+N\+TR@{E\+I\+N\+TR}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+I\+N\+TR@{E\+I\+N\+TR}}\item[{\em 
+E\+I\+N\+TR\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6af344b6bd31640a3484756995763b0c33}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6af344b6bd31640a3484756995763b0c33}
+}]Interrupted system call \index{E\+IO@{E\+IO}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+IO@{E\+IO}}\item[{\em 
+E\+IO\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a13e79a9dac976d1279fae0a8bdea067c}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a13e79a9dac976d1279fae0a8bdea067c}
+}]I/O error \index{E\+N\+X\+IO@{E\+N\+X\+IO}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+N\+X\+IO@{E\+N\+X\+IO}}\item[{\em 
+E\+N\+X\+IO\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a8422e9d953c665ab3e6c97dc9d49b6b8}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a8422e9d953c665ab3e6c97dc9d49b6b8}
+}]No such device or address \index{E2\+B\+IG@{E2\+B\+IG}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E2\+B\+IG@{E2\+B\+IG}}\item[{\em 
+E2\+B\+IG\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a1e4b912a780e92f676f86a1dd2037433}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a1e4b912a780e92f676f86a1dd2037433}
+}]Arg list too long \index{E\+N\+O\+E\+X\+EC@{E\+N\+O\+E\+X\+EC}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+N\+O\+E\+X\+EC@{E\+N\+O\+E\+X\+EC}}\item[{\em 
+E\+N\+O\+E\+X\+EC\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aa0b80339a681751c2d85c3c528107c32}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aa0b80339a681751c2d85c3c528107c32}
+}]Exec format error \index{E\+B\+A\+DF@{E\+B\+A\+DF}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+B\+A\+DF@{E\+B\+A\+DF}}\item[{\em 
+E\+B\+A\+DF\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a0c3ed40e5e7c2c617b13334d16f9726a}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a0c3ed40e5e7c2c617b13334d16f9726a}
+}]Bad file number \index{E\+C\+H\+I\+LD@{E\+C\+H\+I\+LD}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+C\+H\+I\+LD@{E\+C\+H\+I\+LD}}\item[{\em 
+E\+C\+H\+I\+LD\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a50b9f1fcd48a5bd74576676755c313d7}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a50b9f1fcd48a5bd74576676755c313d7}
+}]No child processes \index{E\+A\+G\+A\+IN@{E\+A\+G\+A\+IN}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+A\+G\+A\+IN@{E\+A\+G\+A\+IN}}\item[{\em 
+E\+A\+G\+A\+IN\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6ae7da30e8b546a8608ddcbddffe1c7657}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6ae7da30e8b546a8608ddcbddffe1c7657}
+}]Try again \index{E\+N\+O\+M\+EM@{E\+N\+O\+M\+EM}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+N\+O\+M\+EM@{E\+N\+O\+M\+EM}}\item[{\em 
+E\+N\+O\+M\+EM\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a67485042018ca95b2bedc1de434991ec}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a67485042018ca95b2bedc1de434991ec}
+}]Out of memory \index{E\+A\+C\+C\+ES@{E\+A\+C\+C\+ES}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+A\+C\+C\+ES@{E\+A\+C\+C\+ES}}\item[{\em 
+E\+A\+C\+C\+ES\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aba16021ab6051bcab2f643e1ec1867a2}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aba16021ab6051bcab2f643e1ec1867a2}
+}]Permission denied \index{E\+F\+A\+U\+LT@{E\+F\+A\+U\+LT}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+F\+A\+U\+LT@{E\+F\+A\+U\+LT}}\item[{\em 
+E\+F\+A\+U\+LT\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a4114aae8a8d7f8aef1f8a59eb91d96d4}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a4114aae8a8d7f8aef1f8a59eb91d96d4}
+}]Bad address \index{E\+N\+O\+T\+B\+LK@{E\+N\+O\+T\+B\+LK}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+N\+O\+T\+B\+LK@{E\+N\+O\+T\+B\+LK}}\item[{\em 
+E\+N\+O\+T\+B\+LK\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a2577464fd9f84fe5d399565622b29b3e}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a2577464fd9f84fe5d399565622b29b3e}
+}]Block device required \index{E\+B\+U\+SY@{E\+B\+U\+SY}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+B\+U\+SY@{E\+B\+U\+SY}}\item[{\em 
+E\+B\+U\+SY\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a8ea0d99b6b0a793b00d08afc914372cb}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a8ea0d99b6b0a793b00d08afc914372cb}
+}]Device or resource busy \index{E\+E\+X\+I\+ST@{E\+E\+X\+I\+ST}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+E\+X\+I\+ST@{E\+E\+X\+I\+ST}}\item[{\em 
+E\+E\+X\+I\+ST\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a1823661c36d2cd1da83d252ef64cd4ef}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a1823661c36d2cd1da83d252ef64cd4ef}
+}]File exists \index{E\+X\+D\+EV@{E\+X\+D\+EV}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+X\+D\+EV@{E\+X\+D\+EV}}\item[{\em 
+E\+X\+D\+EV\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a0bd10b6a2530e474dd84cd82c937520e}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a0bd10b6a2530e474dd84cd82c937520e}
+}]Cross-\/device link \index{E\+N\+O\+D\+EV@{E\+N\+O\+D\+EV}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+N\+O\+D\+EV@{E\+N\+O\+D\+EV}}\item[{\em 
+E\+N\+O\+D\+EV\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a855331ab6830534959994f27f4bf5290}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a855331ab6830534959994f27f4bf5290}
+}]No such device \index{E\+N\+O\+T\+D\+IR@{E\+N\+O\+T\+D\+IR}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+N\+O\+T\+D\+IR@{E\+N\+O\+T\+D\+IR}}\item[{\em 
+E\+N\+O\+T\+D\+IR\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a755e6867f2efb2285fc31cb957340695}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a755e6867f2efb2285fc31cb957340695}
+}]Not a directory \index{E\+I\+S\+D\+IR@{E\+I\+S\+D\+IR}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+I\+S\+D\+IR@{E\+I\+S\+D\+IR}}\item[{\em 
+E\+I\+S\+D\+IR\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6af0c5b40ec99077ee819dffa7ea7db838}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6af0c5b40ec99077ee819dffa7ea7db838}
+}]Is a directory \index{E\+I\+N\+V\+AL@{E\+I\+N\+V\+AL}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+I\+N\+V\+AL@{E\+I\+N\+V\+AL}}\item[{\em 
+E\+I\+N\+V\+AL\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6af3b2c736cd98554b693419bc3bd6bc5a}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6af3b2c736cd98554b693419bc3bd6bc5a}
+}]Invalid argument \index{E\+N\+F\+I\+LE@{E\+N\+F\+I\+LE}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+N\+F\+I\+LE@{E\+N\+F\+I\+LE}}\item[{\em 
+E\+N\+F\+I\+LE\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6ae19c4d12aeed677fa8085670f564d86f}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6ae19c4d12aeed677fa8085670f564d86f}
+}]File table overflow \index{E\+M\+F\+I\+LE@{E\+M\+F\+I\+LE}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+M\+F\+I\+LE@{E\+M\+F\+I\+LE}}\item[{\em 
+E\+M\+F\+I\+LE\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a06aaf2a7ec860bb2dfede1eda55b1c95}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a06aaf2a7ec860bb2dfede1eda55b1c95}
+}]Too many open files \index{E\+N\+O\+T\+TY@{E\+N\+O\+T\+TY}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+N\+O\+T\+TY@{E\+N\+O\+T\+TY}}\item[{\em 
+E\+N\+O\+T\+TY\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a9658b2af30be8fdb91ab3a0fe9210914}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a9658b2af30be8fdb91ab3a0fe9210914}
+}]Not a typewriter \index{E\+T\+X\+T\+B\+SY@{E\+T\+X\+T\+B\+SY}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+T\+X\+T\+B\+SY@{E\+T\+X\+T\+B\+SY}}\item[{\em 
+E\+T\+X\+T\+B\+SY\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aefbc48a34cf8a26adfc00997f0cd7054}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aefbc48a34cf8a26adfc00997f0cd7054}
+}]Text file busy \index{E\+F\+B\+IG@{E\+F\+B\+IG}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+F\+B\+IG@{E\+F\+B\+IG}}\item[{\em 
+E\+F\+B\+IG\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a5f9217735e459d1fa1356b56aa9cf4b7}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a5f9217735e459d1fa1356b56aa9cf4b7}
+}]File too large \index{E\+N\+O\+S\+PC@{E\+N\+O\+S\+PC}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+N\+O\+S\+PC@{E\+N\+O\+S\+PC}}\item[{\em 
+E\+N\+O\+S\+PC\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a19ca1ae664eb5451c035347cef177988}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a19ca1ae664eb5451c035347cef177988}
+}]No space left on device \index{E\+S\+P\+I\+PE@{E\+S\+P\+I\+PE}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+S\+P\+I\+PE@{E\+S\+P\+I\+PE}}\item[{\em 
+E\+S\+P\+I\+PE\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a656f6215701220ee880852d1544f841c}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a656f6215701220ee880852d1544f841c}
+}]Illegal seek \index{E\+R\+O\+FS@{E\+R\+O\+FS}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+R\+O\+FS@{E\+R\+O\+FS}}\item[{\em 
+E\+R\+O\+FS\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aa0db1f7a00502ff32aa6c1b0efbd5f40}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aa0db1f7a00502ff32aa6c1b0efbd5f40}
+}]Read-\/only file system \index{E\+M\+L\+I\+NK@{E\+M\+L\+I\+NK}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+M\+L\+I\+NK@{E\+M\+L\+I\+NK}}\item[{\em 
+E\+M\+L\+I\+NK\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6ab42a11dc36aa734524cda9c7af74cb91}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6ab42a11dc36aa734524cda9c7af74cb91}
+}]Too many links \index{E\+P\+I\+PE@{E\+P\+I\+PE}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+P\+I\+PE@{E\+P\+I\+PE}}\item[{\em 
+E\+P\+I\+PE\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aacf59c16adc26fc153053f5a634943e6}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aacf59c16adc26fc153053f5a634943e6}
+}]Broken pipe \index{E\+D\+OM@{E\+D\+OM}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+D\+OM@{E\+D\+OM}}\item[{\em 
+E\+D\+OM\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6af97251a760aed575f299d015f4e001a2}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6af97251a760aed575f299d015f4e001a2}
+}]Math argument out of domain of func \index{E\+R\+A\+N\+GE@{E\+R\+A\+N\+GE}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+R\+A\+N\+GE@{E\+R\+A\+N\+GE}}\item[{\em 
+E\+R\+A\+N\+GE\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a8ec0ab9151cb92c290a6709096abecaa}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a8ec0ab9151cb92c290a6709096abecaa}
+}]Math result not representable \index{E\+D\+E\+A\+D\+LK@{E\+D\+E\+A\+D\+LK}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+D\+E\+A\+D\+LK@{E\+D\+E\+A\+D\+LK}}\item[{\em 
+E\+D\+E\+A\+D\+LK\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6abf8e5855ae1958dbcc5276d88364513d}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6abf8e5855ae1958dbcc5276d88364513d}
+}]Resource deadlock would occur \index{E\+N\+A\+M\+E\+T\+O\+O\+L\+O\+NG@{E\+N\+A\+M\+E\+T\+O\+O\+L\+O\+NG}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+N\+A\+M\+E\+T\+O\+O\+L\+O\+NG@{E\+N\+A\+M\+E\+T\+O\+O\+L\+O\+NG}}\item[{\em 
+E\+N\+A\+M\+E\+T\+O\+O\+L\+O\+NG\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a8c879712015d1cbc8073ddf7bb2dc9ac}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a8c879712015d1cbc8073ddf7bb2dc9ac}
+}]File name too long \index{E\+N\+O\+L\+CK@{E\+N\+O\+L\+CK}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+N\+O\+L\+CK@{E\+N\+O\+L\+CK}}\item[{\em 
+E\+N\+O\+L\+CK\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a99b31701aba0b67009c614a22ead325f}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a99b31701aba0b67009c614a22ead325f}
+}]No record locks available \index{E\+N\+O\+S\+YS@{E\+N\+O\+S\+YS}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+N\+O\+S\+YS@{E\+N\+O\+S\+YS}}\item[{\em 
+E\+N\+O\+S\+YS\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a3bbba876392b56900632b8a3b0629e95}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a3bbba876392b56900632b8a3b0629e95}
+}]Function not implemented \index{E\+N\+O\+T\+E\+M\+P\+TY@{E\+N\+O\+T\+E\+M\+P\+TY}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+N\+O\+T\+E\+M\+P\+TY@{E\+N\+O\+T\+E\+M\+P\+TY}}\item[{\em 
+E\+N\+O\+T\+E\+M\+P\+TY\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a4c0203a04898bb4c84215694ef568bda}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a4c0203a04898bb4c84215694ef568bda}
+}]Directory not empty \index{E\+L\+O\+OP@{E\+L\+O\+OP}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+L\+O\+OP@{E\+L\+O\+OP}}\item[{\em 
+E\+L\+O\+OP\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a924e5ba29e5b9f22a391d4672dadbe35}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a924e5ba29e5b9f22a391d4672dadbe35}
+}]Too many symbolic links encountered \index{E\+W\+O\+U\+L\+D\+B\+L\+O\+CK@{E\+W\+O\+U\+L\+D\+B\+L\+O\+CK}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+W\+O\+U\+L\+D\+B\+L\+O\+CK@{E\+W\+O\+U\+L\+D\+B\+L\+O\+CK}}\item[{\em 
+E\+W\+O\+U\+L\+D\+B\+L\+O\+CK\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a41e443804b8a330e01d86e9307a95505}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a41e443804b8a330e01d86e9307a95505}
+}]Operation would block \index{E\+N\+O\+M\+SG@{E\+N\+O\+M\+SG}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+N\+O\+M\+SG@{E\+N\+O\+M\+SG}}\item[{\em 
+E\+N\+O\+M\+SG\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aadd55a1a3a72674ae49650f570984def}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aadd55a1a3a72674ae49650f570984def}
+}]No message of desired type \index{E\+I\+D\+RM@{E\+I\+D\+RM}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+I\+D\+RM@{E\+I\+D\+RM}}\item[{\em 
+E\+I\+D\+RM\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a175ffffd0f8ac6ba9ed8fd2bc317013e}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a175ffffd0f8ac6ba9ed8fd2bc317013e}
+}]Identifier removed \index{E\+C\+H\+R\+NG@{E\+C\+H\+R\+NG}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+C\+H\+R\+NG@{E\+C\+H\+R\+NG}}\item[{\em 
+E\+C\+H\+R\+NG\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6ab219303a043711fbea0a65dfe0333369}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6ab219303a043711fbea0a65dfe0333369}
+}]Channel number out of range \index{E\+L2\+N\+S\+Y\+NC@{E\+L2\+N\+S\+Y\+NC}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+L2\+N\+S\+Y\+NC@{E\+L2\+N\+S\+Y\+NC}}\item[{\em 
+E\+L2\+N\+S\+Y\+NC\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a62bc3d468345e9487310fc33d1392d16}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a62bc3d468345e9487310fc33d1392d16}
+}]Level 2 not synchronized \index{E\+L3\+H\+LT@{E\+L3\+H\+LT}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+L3\+H\+LT@{E\+L3\+H\+LT}}\item[{\em 
+E\+L3\+H\+LT\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a52b70cd54b80ffad37f8fd5b67077ef6}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a52b70cd54b80ffad37f8fd5b67077ef6}
+}]Level 3 halted \index{E\+L3\+R\+ST@{E\+L3\+R\+ST}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+L3\+R\+ST@{E\+L3\+R\+ST}}\item[{\em 
+E\+L3\+R\+ST\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a4ad6750cfb9f2c509e282d9c0e6766cc}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a4ad6750cfb9f2c509e282d9c0e6766cc}
+}]Level 3 reset \index{E\+L\+N\+R\+NG@{E\+L\+N\+R\+NG}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+L\+N\+R\+NG@{E\+L\+N\+R\+NG}}\item[{\em 
+E\+L\+N\+R\+NG\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a33465010542c87c4bec3ffbb4b6bc71c}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a33465010542c87c4bec3ffbb4b6bc71c}
+}]Link number out of range \index{E\+U\+N\+A\+T\+CH@{E\+U\+N\+A\+T\+CH}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+U\+N\+A\+T\+CH@{E\+U\+N\+A\+T\+CH}}\item[{\em 
+E\+U\+N\+A\+T\+CH\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a3126b9fcf8c339acca8ec432e386f01a}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a3126b9fcf8c339acca8ec432e386f01a}
+}]Protocol driver not attached \index{E\+N\+O\+C\+SI@{E\+N\+O\+C\+SI}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+N\+O\+C\+SI@{E\+N\+O\+C\+SI}}\item[{\em 
+E\+N\+O\+C\+SI\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aeec53c2afc1a7e2e681f773235abb77b}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aeec53c2afc1a7e2e681f773235abb77b}
+}]No C\+SI structure available \index{E\+L2\+H\+LT@{E\+L2\+H\+LT}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+L2\+H\+LT@{E\+L2\+H\+LT}}\item[{\em 
+E\+L2\+H\+LT\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6af30888e9a0fa29781a5f7942bab42e7d}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6af30888e9a0fa29781a5f7942bab42e7d}
+}]Level 2 halted \index{E\+B\+A\+DE@{E\+B\+A\+DE}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+B\+A\+DE@{E\+B\+A\+DE}}\item[{\em 
+E\+B\+A\+DE\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6ac64347fe43300a928de915e4b8bf7796}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6ac64347fe43300a928de915e4b8bf7796}
+}]Invalid exchange \index{E\+B\+A\+DR@{E\+B\+A\+DR}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+B\+A\+DR@{E\+B\+A\+DR}}\item[{\em 
+E\+B\+A\+DR\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a4b5f4fbccba662997d445a3be5b7e6de}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a4b5f4fbccba662997d445a3be5b7e6de}
+}]Invalid request descriptor \index{E\+X\+F\+U\+LL@{E\+X\+F\+U\+LL}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+X\+F\+U\+LL@{E\+X\+F\+U\+LL}}\item[{\em 
+E\+X\+F\+U\+LL\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a8615130f9f3382ffb14a78185f5a1caa}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a8615130f9f3382ffb14a78185f5a1caa}
+}]Exchange full \index{E\+N\+O\+A\+NO@{E\+N\+O\+A\+NO}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+N\+O\+A\+NO@{E\+N\+O\+A\+NO}}\item[{\em 
+E\+N\+O\+A\+NO\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a7413defee43fa250ea33f9448cc997c8}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a7413defee43fa250ea33f9448cc997c8}
+}]No anode \index{E\+B\+A\+D\+R\+QC@{E\+B\+A\+D\+R\+QC}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+B\+A\+D\+R\+QC@{E\+B\+A\+D\+R\+QC}}\item[{\em 
+E\+B\+A\+D\+R\+QC\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a744eb15ceae97deb8e350e970d1093f5}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a744eb15ceae97deb8e350e970d1093f5}
+}]Invalid request code \index{E\+B\+A\+D\+S\+LT@{E\+B\+A\+D\+S\+LT}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+B\+A\+D\+S\+LT@{E\+B\+A\+D\+S\+LT}}\item[{\em 
+E\+B\+A\+D\+S\+LT\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a709c0f11f020a423403cbb18a18efbb4}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a709c0f11f020a423403cbb18a18efbb4}
+}]Invalid slot \index{E\+B\+F\+O\+NT@{E\+B\+F\+O\+NT}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+B\+F\+O\+NT@{E\+B\+F\+O\+NT}}\item[{\em 
+E\+B\+F\+O\+NT\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6af1a8808b5ae48a4914f23680ae93c72e}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6af1a8808b5ae48a4914f23680ae93c72e}
+}]Bad font file format \index{E\+N\+O\+S\+TR@{E\+N\+O\+S\+TR}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+N\+O\+S\+TR@{E\+N\+O\+S\+TR}}\item[{\em 
+E\+N\+O\+S\+TR\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6abde212331ef74c3ef99c390b692f11fa}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6abde212331ef74c3ef99c390b692f11fa}
+}]Device not a stream \index{E\+N\+O\+D\+A\+TA@{E\+N\+O\+D\+A\+TA}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+N\+O\+D\+A\+TA@{E\+N\+O\+D\+A\+TA}}\item[{\em 
+E\+N\+O\+D\+A\+TA\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a30e8c06ba1a7236161005cb937236478}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a30e8c06ba1a7236161005cb937236478}
+}]No data available \index{E\+T\+I\+ME@{E\+T\+I\+ME}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+T\+I\+ME@{E\+T\+I\+ME}}\item[{\em 
+E\+T\+I\+ME\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a7d06cc8ca72d4e78cf950b0185db45dd}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a7d06cc8ca72d4e78cf950b0185db45dd}
+}]Timer expired \index{E\+N\+O\+SR@{E\+N\+O\+SR}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+N\+O\+SR@{E\+N\+O\+SR}}\item[{\em 
+E\+N\+O\+SR\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a925f6f7a7c07a0bb9f61bb5fba91dd7c}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a925f6f7a7c07a0bb9f61bb5fba91dd7c}
+}]Out of streams resources \index{E\+N\+O\+N\+ET@{E\+N\+O\+N\+ET}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+N\+O\+N\+ET@{E\+N\+O\+N\+ET}}\item[{\em 
+E\+N\+O\+N\+ET\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a9ace779fe071c881aa0c4688a17e9e3e}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a9ace779fe071c881aa0c4688a17e9e3e}
+}]Machine is not on the network \index{E\+N\+O\+P\+KG@{E\+N\+O\+P\+KG}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+N\+O\+P\+KG@{E\+N\+O\+P\+KG}}\item[{\em 
+E\+N\+O\+P\+KG\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a851ff1f858f0f3809f4af2ad5305c72b}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a851ff1f858f0f3809f4af2ad5305c72b}
+}]Package not installed \index{E\+R\+E\+M\+O\+TE@{E\+R\+E\+M\+O\+TE}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+R\+E\+M\+O\+TE@{E\+R\+E\+M\+O\+TE}}\item[{\em 
+E\+R\+E\+M\+O\+TE\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a9e3e8b5686ae9e223a88ae35d97bb307}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a9e3e8b5686ae9e223a88ae35d97bb307}
+}]Object is remote \index{E\+N\+O\+L\+I\+NK@{E\+N\+O\+L\+I\+NK}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+N\+O\+L\+I\+NK@{E\+N\+O\+L\+I\+NK}}\item[{\em 
+E\+N\+O\+L\+I\+NK\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a11a8b60f577a844ea6842787afb50f27}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a11a8b60f577a844ea6842787afb50f27}
+}]Link has been severed \index{E\+A\+DV@{E\+A\+DV}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+A\+DV@{E\+A\+DV}}\item[{\em 
+E\+A\+DV\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aaba88cc41661a3636dd0507c65ac33b2}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aaba88cc41661a3636dd0507c65ac33b2}
+}]Advertise error \index{E\+S\+R\+M\+NT@{E\+S\+R\+M\+NT}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+S\+R\+M\+NT@{E\+S\+R\+M\+NT}}\item[{\em 
+E\+S\+R\+M\+NT\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6af4d525f3ec1b9876522c581694eb4a14}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6af4d525f3ec1b9876522c581694eb4a14}
+}]Srmount error \index{E\+C\+O\+MM@{E\+C\+O\+MM}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+C\+O\+MM@{E\+C\+O\+MM}}\item[{\em 
+E\+C\+O\+MM\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a8394fc2cecbb5e3fd72ca46e5d53b459}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a8394fc2cecbb5e3fd72ca46e5d53b459}
+}]Communication error on send \index{E\+P\+R\+O\+TO@{E\+P\+R\+O\+TO}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+P\+R\+O\+TO@{E\+P\+R\+O\+TO}}\item[{\em 
+E\+P\+R\+O\+TO\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a197884f3dcaf8d00c681a9ef7b741c1b}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a197884f3dcaf8d00c681a9ef7b741c1b}
+}]Protocol error \index{E\+M\+U\+L\+T\+I\+H\+OP@{E\+M\+U\+L\+T\+I\+H\+OP}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+M\+U\+L\+T\+I\+H\+OP@{E\+M\+U\+L\+T\+I\+H\+OP}}\item[{\em 
+E\+M\+U\+L\+T\+I\+H\+OP\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6ac4bf10dcb99ea652f0f80fd3609cdac5}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6ac4bf10dcb99ea652f0f80fd3609cdac5}
+}]Multihop attempted \index{E\+D\+O\+T\+D\+OT@{E\+D\+O\+T\+D\+OT}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+D\+O\+T\+D\+OT@{E\+D\+O\+T\+D\+OT}}\item[{\em 
+E\+D\+O\+T\+D\+OT\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6ac244972bd945fd74c3343e232d04d952}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6ac244972bd945fd74c3343e232d04d952}
+}]R\+FS specific error \index{E\+B\+A\+D\+M\+SG@{E\+B\+A\+D\+M\+SG}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+B\+A\+D\+M\+SG@{E\+B\+A\+D\+M\+SG}}\item[{\em 
+E\+B\+A\+D\+M\+SG\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a33bfb39d641e1cc24e77542ef4b1d143}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a33bfb39d641e1cc24e77542ef4b1d143}
+}]Not a data message \index{E\+O\+V\+E\+R\+F\+L\+OW@{E\+O\+V\+E\+R\+F\+L\+OW}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+O\+V\+E\+R\+F\+L\+OW@{E\+O\+V\+E\+R\+F\+L\+OW}}\item[{\em 
+E\+O\+V\+E\+R\+F\+L\+OW\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a07156032639fa34c57677d5a0537d681}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a07156032639fa34c57677d5a0537d681}
+}]Value too large for defined data type \index{E\+N\+O\+T\+U\+N\+IQ@{E\+N\+O\+T\+U\+N\+IQ}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+N\+O\+T\+U\+N\+IQ@{E\+N\+O\+T\+U\+N\+IQ}}\item[{\em 
+E\+N\+O\+T\+U\+N\+IQ\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a4c4870bf00e02145d9357f131602d0aa}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a4c4870bf00e02145d9357f131602d0aa}
+}]Name not unique on network \index{E\+B\+A\+D\+FD@{E\+B\+A\+D\+FD}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+B\+A\+D\+FD@{E\+B\+A\+D\+FD}}\item[{\em 
+E\+B\+A\+D\+FD\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aa33e7e64060f699afe631fcae6d45fe0}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aa33e7e64060f699afe631fcae6d45fe0}
+}]File descriptor in bad state \index{E\+R\+E\+M\+C\+HG@{E\+R\+E\+M\+C\+HG}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+R\+E\+M\+C\+HG@{E\+R\+E\+M\+C\+HG}}\item[{\em 
+E\+R\+E\+M\+C\+HG\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a740b0ce0ff1b2515837f3c335811dc0d}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a740b0ce0ff1b2515837f3c335811dc0d}
+}]Remote address changed \index{E\+L\+I\+B\+A\+CC@{E\+L\+I\+B\+A\+CC}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+L\+I\+B\+A\+CC@{E\+L\+I\+B\+A\+CC}}\item[{\em 
+E\+L\+I\+B\+A\+CC\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a95f2ee83065e69aff6f55d76a239d4e7}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a95f2ee83065e69aff6f55d76a239d4e7}
+}]Can not access a needed shared library \index{E\+L\+I\+B\+B\+AD@{E\+L\+I\+B\+B\+AD}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+L\+I\+B\+B\+AD@{E\+L\+I\+B\+B\+AD}}\item[{\em 
+E\+L\+I\+B\+B\+AD\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a8189939be5d15a02caab6f76070d48b1}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a8189939be5d15a02caab6f76070d48b1}
+}]Accessing a corrupted shared library \index{E\+L\+I\+B\+S\+CN@{E\+L\+I\+B\+S\+CN}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+L\+I\+B\+S\+CN@{E\+L\+I\+B\+S\+CN}}\item[{\em 
+E\+L\+I\+B\+S\+CN\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a3d21849b35f4aca74dc07c7640094792}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a3d21849b35f4aca74dc07c7640094792}
+}].lib section in a.\+out corrupted \index{E\+L\+I\+B\+M\+AX@{E\+L\+I\+B\+M\+AX}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+L\+I\+B\+M\+AX@{E\+L\+I\+B\+M\+AX}}\item[{\em 
+E\+L\+I\+B\+M\+AX\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a5aabd643cc1d395fe8639f8c47a9a928}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a5aabd643cc1d395fe8639f8c47a9a928}
+}]Attempting to link in too many shared libraries \index{E\+L\+I\+B\+E\+X\+EC@{E\+L\+I\+B\+E\+X\+EC}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+L\+I\+B\+E\+X\+EC@{E\+L\+I\+B\+E\+X\+EC}}\item[{\em 
+E\+L\+I\+B\+E\+X\+EC\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a592db79b8766cb0a9739074424434a81}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a592db79b8766cb0a9739074424434a81}
+}]Cannot exec a shared library directly \index{E\+I\+L\+S\+EQ@{E\+I\+L\+S\+EQ}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+I\+L\+S\+EQ@{E\+I\+L\+S\+EQ}}\item[{\em 
+E\+I\+L\+S\+EQ\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a7d27ad0da80e9107117db97e7613d009}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a7d27ad0da80e9107117db97e7613d009}
+}]Illegal byte sequence \index{E\+R\+E\+S\+T\+A\+RT@{E\+R\+E\+S\+T\+A\+RT}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+R\+E\+S\+T\+A\+RT@{E\+R\+E\+S\+T\+A\+RT}}\item[{\em 
+E\+R\+E\+S\+T\+A\+RT\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a394c0301d0a59670475ab7e3f40a6207}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a394c0301d0a59670475ab7e3f40a6207}
+}]Interrupted system call should be restarted \index{E\+S\+T\+R\+P\+I\+PE@{E\+S\+T\+R\+P\+I\+PE}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+S\+T\+R\+P\+I\+PE@{E\+S\+T\+R\+P\+I\+PE}}\item[{\em 
+E\+S\+T\+R\+P\+I\+PE\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aeedd8164f356696e21bf69862758b1cd}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aeedd8164f356696e21bf69862758b1cd}
+}]Streams pipe error \index{E\+U\+S\+E\+RS@{E\+U\+S\+E\+RS}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+U\+S\+E\+RS@{E\+U\+S\+E\+RS}}\item[{\em 
+E\+U\+S\+E\+RS\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6ad68af220fb92ce98cafd8deac7425afb}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6ad68af220fb92ce98cafd8deac7425afb}
+}]Too many users \index{E\+N\+O\+T\+S\+O\+CK@{E\+N\+O\+T\+S\+O\+CK}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+N\+O\+T\+S\+O\+CK@{E\+N\+O\+T\+S\+O\+CK}}\item[{\em 
+E\+N\+O\+T\+S\+O\+CK\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a3d527e6dea35118172cea2841c643d15}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a3d527e6dea35118172cea2841c643d15}
+}]Socket operation on non-\/socket \index{E\+D\+E\+S\+T\+A\+D\+D\+R\+R\+EQ@{E\+D\+E\+S\+T\+A\+D\+D\+R\+R\+EQ}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+D\+E\+S\+T\+A\+D\+D\+R\+R\+EQ@{E\+D\+E\+S\+T\+A\+D\+D\+R\+R\+EQ}}\item[{\em 
+E\+D\+E\+S\+T\+A\+D\+D\+R\+R\+EQ\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a22a622c8cf91a7ec81a3aeebbb0fbac3}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a22a622c8cf91a7ec81a3aeebbb0fbac3}
+}]Destination address required \index{E\+M\+S\+G\+S\+I\+ZE@{E\+M\+S\+G\+S\+I\+ZE}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+M\+S\+G\+S\+I\+ZE@{E\+M\+S\+G\+S\+I\+ZE}}\item[{\em 
+E\+M\+S\+G\+S\+I\+ZE\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a4691ae5001945dcd4060350ced7209ba}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a4691ae5001945dcd4060350ced7209ba}
+}]Message too long \index{E\+P\+R\+O\+T\+O\+T\+Y\+PE@{E\+P\+R\+O\+T\+O\+T\+Y\+PE}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+P\+R\+O\+T\+O\+T\+Y\+PE@{E\+P\+R\+O\+T\+O\+T\+Y\+PE}}\item[{\em 
+E\+P\+R\+O\+T\+O\+T\+Y\+PE\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a09a2c06115576d898d7c5368caffe165}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a09a2c06115576d898d7c5368caffe165}
+}]Protocol wrong type for socket \index{E\+N\+O\+P\+R\+O\+T\+O\+O\+PT@{E\+N\+O\+P\+R\+O\+T\+O\+O\+PT}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+N\+O\+P\+R\+O\+T\+O\+O\+PT@{E\+N\+O\+P\+R\+O\+T\+O\+O\+PT}}\item[{\em 
+E\+N\+O\+P\+R\+O\+T\+O\+O\+PT\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a56c267d3e5761d5348b1926eb9881087}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a56c267d3e5761d5348b1926eb9881087}
+}]Protocol not available \index{E\+P\+R\+O\+T\+O\+N\+O\+S\+U\+P\+P\+O\+RT@{E\+P\+R\+O\+T\+O\+N\+O\+S\+U\+P\+P\+O\+RT}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+P\+R\+O\+T\+O\+N\+O\+S\+U\+P\+P\+O\+RT@{E\+P\+R\+O\+T\+O\+N\+O\+S\+U\+P\+P\+O\+RT}}\item[{\em 
+E\+P\+R\+O\+T\+O\+N\+O\+S\+U\+P\+P\+O\+RT\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a9406a0d80037f8237fff5a4f3f5b614d}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a9406a0d80037f8237fff5a4f3f5b614d}
+}]Protocol not supported \index{E\+S\+O\+C\+K\+T\+N\+O\+S\+U\+P\+P\+O\+RT@{E\+S\+O\+C\+K\+T\+N\+O\+S\+U\+P\+P\+O\+RT}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+S\+O\+C\+K\+T\+N\+O\+S\+U\+P\+P\+O\+RT@{E\+S\+O\+C\+K\+T\+N\+O\+S\+U\+P\+P\+O\+RT}}\item[{\em 
+E\+S\+O\+C\+K\+T\+N\+O\+S\+U\+P\+P\+O\+RT\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6addb6bb9fdbc9ceaeba60d9074bb8fe1c}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6addb6bb9fdbc9ceaeba60d9074bb8fe1c}
+}]Socket type not supported \index{E\+O\+P\+N\+O\+T\+S\+U\+PP@{E\+O\+P\+N\+O\+T\+S\+U\+PP}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+O\+P\+N\+O\+T\+S\+U\+PP@{E\+O\+P\+N\+O\+T\+S\+U\+PP}}\item[{\em 
+E\+O\+P\+N\+O\+T\+S\+U\+PP\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aba44b0ae349783e0d73eeb44ea2aed9a}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aba44b0ae349783e0d73eeb44ea2aed9a}
+}]Operation not supported on transport endpoint \index{E\+P\+F\+N\+O\+S\+U\+P\+P\+O\+RT@{E\+P\+F\+N\+O\+S\+U\+P\+P\+O\+RT}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+P\+F\+N\+O\+S\+U\+P\+P\+O\+RT@{E\+P\+F\+N\+O\+S\+U\+P\+P\+O\+RT}}\item[{\em 
+E\+P\+F\+N\+O\+S\+U\+P\+P\+O\+RT\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a216f0e0940f5ca6cafff214aa9d58793}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a216f0e0940f5ca6cafff214aa9d58793}
+}]Protocol family not supported \index{E\+A\+F\+N\+O\+S\+U\+P\+P\+O\+RT@{E\+A\+F\+N\+O\+S\+U\+P\+P\+O\+RT}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+A\+F\+N\+O\+S\+U\+P\+P\+O\+RT@{E\+A\+F\+N\+O\+S\+U\+P\+P\+O\+RT}}\item[{\em 
+E\+A\+F\+N\+O\+S\+U\+P\+P\+O\+RT\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6ab215c058f57dc63434fe420d44501337}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6ab215c058f57dc63434fe420d44501337}
+}]Address family not supported by protocol \index{E\+A\+D\+D\+R\+I\+N\+U\+SE@{E\+A\+D\+D\+R\+I\+N\+U\+SE}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+A\+D\+D\+R\+I\+N\+U\+SE@{E\+A\+D\+D\+R\+I\+N\+U\+SE}}\item[{\em 
+E\+A\+D\+D\+R\+I\+N\+U\+SE\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a341ede68e0283899bc24aff70298ba2c}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a341ede68e0283899bc24aff70298ba2c}
+}]Address already in use \index{E\+A\+D\+D\+R\+N\+O\+T\+A\+V\+A\+IL@{E\+A\+D\+D\+R\+N\+O\+T\+A\+V\+A\+IL}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+A\+D\+D\+R\+N\+O\+T\+A\+V\+A\+IL@{E\+A\+D\+D\+R\+N\+O\+T\+A\+V\+A\+IL}}\item[{\em 
+E\+A\+D\+D\+R\+N\+O\+T\+A\+V\+A\+IL\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a11b6f454ad3953d06a38ac737bbdc713}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a11b6f454ad3953d06a38ac737bbdc713}
+}]Cannot assign requested address \index{E\+N\+E\+T\+D\+O\+WN@{E\+N\+E\+T\+D\+O\+WN}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+N\+E\+T\+D\+O\+WN@{E\+N\+E\+T\+D\+O\+WN}}\item[{\em 
+E\+N\+E\+T\+D\+O\+WN\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6af3edcaebc8b5e4616a985723fe55de13}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6af3edcaebc8b5e4616a985723fe55de13}
+}]Network is down \index{E\+N\+E\+T\+U\+N\+R\+E\+A\+CH@{E\+N\+E\+T\+U\+N\+R\+E\+A\+CH}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+N\+E\+T\+U\+N\+R\+E\+A\+CH@{E\+N\+E\+T\+U\+N\+R\+E\+A\+CH}}\item[{\em 
+E\+N\+E\+T\+U\+N\+R\+E\+A\+CH\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aff66a24f79fe22653656bfd57bc1a781}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aff66a24f79fe22653656bfd57bc1a781}
+}]Network is unreachable \index{E\+N\+E\+T\+R\+E\+S\+ET@{E\+N\+E\+T\+R\+E\+S\+ET}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+N\+E\+T\+R\+E\+S\+ET@{E\+N\+E\+T\+R\+E\+S\+ET}}\item[{\em 
+E\+N\+E\+T\+R\+E\+S\+ET\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a18d1942865d9c71d0c6dafce322263bf}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a18d1942865d9c71d0c6dafce322263bf}
+}]Network dropped connection because of reset \index{E\+C\+O\+N\+N\+A\+B\+O\+R\+T\+ED@{E\+C\+O\+N\+N\+A\+B\+O\+R\+T\+ED}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+C\+O\+N\+N\+A\+B\+O\+R\+T\+ED@{E\+C\+O\+N\+N\+A\+B\+O\+R\+T\+ED}}\item[{\em 
+E\+C\+O\+N\+N\+A\+B\+O\+R\+T\+ED\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a2d0d0ea22b8493643de72f741692ae22}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a2d0d0ea22b8493643de72f741692ae22}
+}]Software caused connection abort \index{E\+C\+O\+N\+N\+R\+E\+S\+ET@{E\+C\+O\+N\+N\+R\+E\+S\+ET}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+C\+O\+N\+N\+R\+E\+S\+ET@{E\+C\+O\+N\+N\+R\+E\+S\+ET}}\item[{\em 
+E\+C\+O\+N\+N\+R\+E\+S\+ET\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a7faa7018e4e1a90e03951e392639d38c}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a7faa7018e4e1a90e03951e392639d38c}
+}]Connection reset by peer \index{E\+N\+O\+B\+U\+FS@{E\+N\+O\+B\+U\+FS}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+N\+O\+B\+U\+FS@{E\+N\+O\+B\+U\+FS}}\item[{\em 
+E\+N\+O\+B\+U\+FS\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a1fc9a1bd0b4cbe6e02c5ab900f9811f0}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a1fc9a1bd0b4cbe6e02c5ab900f9811f0}
+}]No buffer space available \index{E\+I\+S\+C\+O\+NN@{E\+I\+S\+C\+O\+NN}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+I\+S\+C\+O\+NN@{E\+I\+S\+C\+O\+NN}}\item[{\em 
+E\+I\+S\+C\+O\+NN\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a7da140f1e972ad7ab69295a6f7a74b9f}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a7da140f1e972ad7ab69295a6f7a74b9f}
+}]Transport endpoint is already connected \index{E\+N\+O\+T\+C\+O\+NN@{E\+N\+O\+T\+C\+O\+NN}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+N\+O\+T\+C\+O\+NN@{E\+N\+O\+T\+C\+O\+NN}}\item[{\em 
+E\+N\+O\+T\+C\+O\+NN\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6ac934397332d6a7ec09e5dfa409c9ffa2}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6ac934397332d6a7ec09e5dfa409c9ffa2}
+}]Transport endpoint is not connected \index{E\+S\+H\+U\+T\+D\+O\+WN@{E\+S\+H\+U\+T\+D\+O\+WN}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+S\+H\+U\+T\+D\+O\+WN@{E\+S\+H\+U\+T\+D\+O\+WN}}\item[{\em 
+E\+S\+H\+U\+T\+D\+O\+WN\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aca32998801543fbce8e7b4b0d64d38b1}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aca32998801543fbce8e7b4b0d64d38b1}
+}]Cannot send after transport endpoint shutdown \index{E\+T\+O\+O\+M\+A\+N\+Y\+R\+E\+FS@{E\+T\+O\+O\+M\+A\+N\+Y\+R\+E\+FS}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+T\+O\+O\+M\+A\+N\+Y\+R\+E\+FS@{E\+T\+O\+O\+M\+A\+N\+Y\+R\+E\+FS}}\item[{\em 
+E\+T\+O\+O\+M\+A\+N\+Y\+R\+E\+FS\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a1dd4f4bcf82751081d38cc13bec36730}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a1dd4f4bcf82751081d38cc13bec36730}
+}]Too many references\+: cannot splice \index{E\+T\+I\+M\+E\+D\+O\+UT@{E\+T\+I\+M\+E\+D\+O\+UT}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+T\+I\+M\+E\+D\+O\+UT@{E\+T\+I\+M\+E\+D\+O\+UT}}\item[{\em 
+E\+T\+I\+M\+E\+D\+O\+UT\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6af6caa7ce858a26ab4402098ee20a5d64}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6af6caa7ce858a26ab4402098ee20a5d64}
+}]Connection timed out \index{E\+C\+O\+N\+N\+R\+E\+F\+U\+S\+ED@{E\+C\+O\+N\+N\+R\+E\+F\+U\+S\+ED}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+C\+O\+N\+N\+R\+E\+F\+U\+S\+ED@{E\+C\+O\+N\+N\+R\+E\+F\+U\+S\+ED}}\item[{\em 
+E\+C\+O\+N\+N\+R\+E\+F\+U\+S\+ED\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6adea9782c25d3b9f5252b4570087db533}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6adea9782c25d3b9f5252b4570087db533}
+}]Connection refused \index{E\+H\+O\+S\+T\+D\+O\+WN@{E\+H\+O\+S\+T\+D\+O\+WN}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+H\+O\+S\+T\+D\+O\+WN@{E\+H\+O\+S\+T\+D\+O\+WN}}\item[{\em 
+E\+H\+O\+S\+T\+D\+O\+WN\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a92b69e9abbf4ea4aac62db37068a9ea8}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a92b69e9abbf4ea4aac62db37068a9ea8}
+}]Host is down \index{E\+H\+O\+S\+T\+U\+N\+R\+E\+A\+CH@{E\+H\+O\+S\+T\+U\+N\+R\+E\+A\+CH}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+H\+O\+S\+T\+U\+N\+R\+E\+A\+CH@{E\+H\+O\+S\+T\+U\+N\+R\+E\+A\+CH}}\item[{\em 
+E\+H\+O\+S\+T\+U\+N\+R\+E\+A\+CH\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a8db51cc720349b5fefef1fe93b3de304}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a8db51cc720349b5fefef1fe93b3de304}
+}]No route to host \index{E\+A\+L\+R\+E\+A\+DY@{E\+A\+L\+R\+E\+A\+DY}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+A\+L\+R\+E\+A\+DY@{E\+A\+L\+R\+E\+A\+DY}}\item[{\em 
+E\+A\+L\+R\+E\+A\+DY\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aa514094caef6536fec2699d5f658e893}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aa514094caef6536fec2699d5f658e893}
+}]Operation already in progress \index{E\+I\+N\+P\+R\+O\+G\+R\+E\+SS@{E\+I\+N\+P\+R\+O\+G\+R\+E\+SS}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+I\+N\+P\+R\+O\+G\+R\+E\+SS@{E\+I\+N\+P\+R\+O\+G\+R\+E\+SS}}\item[{\em 
+E\+I\+N\+P\+R\+O\+G\+R\+E\+SS\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a42fc3a7d50eaeadbe9d6952b4b302c92}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a42fc3a7d50eaeadbe9d6952b4b302c92}
+}]Operation now in progress \index{E\+S\+T\+A\+LE@{E\+S\+T\+A\+LE}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+S\+T\+A\+LE@{E\+S\+T\+A\+LE}}\item[{\em 
+E\+S\+T\+A\+LE\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6ae56e8ac85c5bf34910325abdfef6f1cc}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6ae56e8ac85c5bf34910325abdfef6f1cc}
+}]Stale N\+FS file handle \index{E\+U\+C\+L\+E\+AN@{E\+U\+C\+L\+E\+AN}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+U\+C\+L\+E\+AN@{E\+U\+C\+L\+E\+AN}}\item[{\em 
+E\+U\+C\+L\+E\+AN\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6ac85e0784c30642148c6566a9fff14e44}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6ac85e0784c30642148c6566a9fff14e44}
+}]Structure needs cleaning \index{E\+N\+O\+T\+N\+AM@{E\+N\+O\+T\+N\+AM}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+N\+O\+T\+N\+AM@{E\+N\+O\+T\+N\+AM}}\item[{\em 
+E\+N\+O\+T\+N\+AM\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a9851e876e988ceec534f28430093f080}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a9851e876e988ceec534f28430093f080}
+}]Not a X\+E\+N\+IX named type file \index{E\+N\+A\+V\+A\+IL@{E\+N\+A\+V\+A\+IL}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+N\+A\+V\+A\+IL@{E\+N\+A\+V\+A\+IL}}\item[{\em 
+E\+N\+A\+V\+A\+IL\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6adc403b2847389403e4ad2c67ee30d79b}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6adc403b2847389403e4ad2c67ee30d79b}
+}]No X\+E\+N\+IX semaphores available \index{E\+I\+S\+N\+AM@{E\+I\+S\+N\+AM}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+I\+S\+N\+AM@{E\+I\+S\+N\+AM}}\item[{\em 
+E\+I\+S\+N\+AM\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a1a3146fb3796c6d6ff4ee4d464d209de}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a1a3146fb3796c6d6ff4ee4d464d209de}
+}]Is a named type file \index{E\+R\+E\+M\+O\+T\+E\+IO@{E\+R\+E\+M\+O\+T\+E\+IO}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+R\+E\+M\+O\+T\+E\+IO@{E\+R\+E\+M\+O\+T\+E\+IO}}\item[{\em 
+E\+R\+E\+M\+O\+T\+E\+IO\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a39e5e4a5a84c4e721aaeb0d49bbf95fb}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a39e5e4a5a84c4e721aaeb0d49bbf95fb}
+}]Remote I/O error \index{E\+D\+Q\+U\+OT@{E\+D\+Q\+U\+OT}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+D\+Q\+U\+OT@{E\+D\+Q\+U\+OT}}\item[{\em 
+E\+D\+Q\+U\+OT\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a0e64f4816c63cfdd41bb84fb7e36da21}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a0e64f4816c63cfdd41bb84fb7e36da21}
+}]Quota exceeded \index{E\+N\+O\+M\+E\+D\+I\+UM@{E\+N\+O\+M\+E\+D\+I\+UM}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+N\+O\+M\+E\+D\+I\+UM@{E\+N\+O\+M\+E\+D\+I\+UM}}\item[{\em 
+E\+N\+O\+M\+E\+D\+I\+UM\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aa0b41c5784d23854104e9a3f9b2bfa26}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6aa0b41c5784d23854104e9a3f9b2bfa26}
+}]No medium found \index{E\+M\+E\+D\+I\+U\+M\+T\+Y\+PE@{E\+M\+E\+D\+I\+U\+M\+T\+Y\+PE}!liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}}\index{liberamox\+::\+Error\+Mgmt@{liberamox\+::\+Error\+Mgmt}!E\+M\+E\+D\+I\+U\+M\+T\+Y\+PE@{E\+M\+E\+D\+I\+U\+M\+T\+Y\+PE}}\item[{\em 
+E\+M\+E\+D\+I\+U\+M\+T\+Y\+PE\hypertarget{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a2482f3bb9fff2906efae5dfb064008e0}{}\label{classliberamox_1_1ErrorMgmt_a5e39af0b825ab9130a1734e79200e2b6a2482f3bb9fff2906efae5dfb064008e0}
+}]Wrong medium type \end{description}
+\end{Desc}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/\hyperlink{ErrorMgmt_8h}{Error\+Mgmt.\+h}\end{DoxyCompactItemize}
