@@ -1,5 +1,2 @@
-# Extension for Arduino plugin for Eclipse
-objects.mk
-
-# Page for website
-html/
+# CLion editor config files
+.idea
