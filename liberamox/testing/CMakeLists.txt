@@ -13,16 +13,8 @@ include_directories(
     ${GMOCK_INCLUDE_DIRS}
 )
 
-if (BUILD_LIB_TEST)
-    include( CTest )
-endif()
-
 # add the executable
 add_executable(${EXECUTABLE_NAME} main.cpp)
 SET_TARGET_PROPERTIES(${EXECUTABLE_NAME} PROPERTIES LINKER_LANGUAGE CXX)
 target_link_libraries(${EXECUTABLE_NAME} ${GTEST_BOTH_LIBRARIES})
 
-# Test
-if (BUILD_LIB_TEST)
-    add_test(liberamox_test ${EXECUTABLE_NAME})
-endif()
